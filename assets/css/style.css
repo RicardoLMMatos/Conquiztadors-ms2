@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family:serif, 'Courier New', Courier;
+    font-family: 'Sedgwick Ave', cursive;
 }
 
 /* Grid system */
@@ -54,9 +54,11 @@ body {
 }
 
 /*links decoration*/
-a:visited, a:active, a:hover {
-    color: #fff;
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
+
 
 /*Logo decoration*/
 .logo-outer {
@@ -73,16 +75,17 @@ a:visited, a:active, a:hover {
 .quiz li {
     padding: 10px 20px 10px 20px;
     cursor: pointer;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .quiz li:not(:last-child) {
-    border-bottom: 1px solid #e6e6e6;
+    /* border-bottom: 1px solid #e6e6e6; */
     margin-bottom: 20px;
 }
 
 /*Button decoration*/
 .question-button {
+    font-size: 20px;
     background-color: purple;
     color: #fff;
     border: none;
@@ -99,7 +102,36 @@ a:visited, a:active, a:hover {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     cursor: pointer;
+    margin: 25px;
 }
+
+.btn-quit {
+    color: red;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 0 50px;
+    transition: all 0.5s;
+}
+
+.btn-back {
+    color: blue;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 0 50px;
+    transition: all 0.5s;
+}
+
+/*Question pages*/
 
 
 
