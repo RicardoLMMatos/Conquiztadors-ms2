@@ -1,0 +1,123 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family:serif, 'Courier New', Courier;
+}
+
+/* Grid system */
+
+.container {
+    font-size: 30px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    margin: 15px;
+    border-radius: 6px;
+}
+
+/* Card system */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px orange;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+.inactive {
+    display: none;
+}
+
+/*links decoration*/
+a:visited, a:active, a:hover {
+    color: #fff;
+}
+
+/*Logo decoration*/
+.logo-outer {
+    display:flex;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 100%;
+    max-width: 860px;
+}
+
+/*li decoration*/
+.quiz li {
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    list-style-type: none
+}
+
+.quiz li:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+
+/*Button decoration*/
+.question-button {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.submit {
+    font-size: 40px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/*Media queries*/
+@media only screen and (min-width: 1px) and (max-width: 639px) {
+    .columns-12-6-3 {
+        max-width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+    .columns-12-6-3 {
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .columns-12-6-3 {
+        max-width: calc(33.333% - 30px);
+    }
+}
