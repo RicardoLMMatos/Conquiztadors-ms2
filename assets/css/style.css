@@ -18,8 +18,6 @@ body {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center
-
 }
 
 .row {
@@ -51,6 +49,16 @@ body {
     padding: 20px;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    }
+
+
+section {
+    justify-content: center;
+  }
+
 .inactive {
     display: none;
 }
@@ -71,6 +79,23 @@ a, a:hover, a:focus, a:active {
 .logo-image {
     width: 100%;
     max-width: 860px;
+    animation-name: hero-zoom;
+    animation-duration: 3s;
+    animation: zoomin 3s ease;
+    animation-delay: 120ms;
+    animation-fill-mode:both;
+
+}
+@keyframes zoomin {
+    0% { 
+      transform: scale(1)
+    }
+    100% {
+      transform: scale(1.1)
+    }
+  } 
+.game-area .row {
+    justify-content: center;
 }
 
 /*li decoration*/
@@ -85,15 +110,11 @@ a, a:hover, a:focus, a:active {
     margin-bottom: 20px;
 }
 
-.game-area .row {
-    justify-content: center;
-}
-
 /*Button decoration*/
 .question {
     color:#fff;
     background-color: orange;
-    border: 2px solid purple;
+    border: 2px solid blueviolet;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 30px;
@@ -104,7 +125,7 @@ a, a:hover, a:focus, a:active {
 
 .question-button {
     font-size: 20px;
-    background-color: purple;
+    background-color: blueviolet;
     color: #fff;
     border: 2px solid orange;
     border-radius: 6px;
@@ -116,7 +137,7 @@ a, a:hover, a:focus, a:active {
     font-size: 40px;
     color: #fff;
     background-color: orange;
-    border: 2px solid purple;
+    border: 2px solid blueviolet;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     cursor: pointer;
@@ -155,7 +176,38 @@ a, a:hover, a:focus, a:active {
 .btn-back:hover {
 transform: scale(1.3);
 }
-
+footer {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .social-networks {
+    text-align: center;
+    font-size: 300%;
+    margin: 1%;
+    padding: 20px;
+    color: orange;
+  }
+  
+  .social-networks li {
+    display: inline;
+  }
+  
+  .social-networks a i::before {
+    transition: color .25s ease-in-out;
+    color: orange;
+  
+  }
+  
+  .social-networks a:visited i::before,
+  a:active i::before {
+    color: orange;
+  }
+  
+  .social-networks a:hover i::before {
+    color: blueviolet;
+  }
 
 /*Question pages*/
 
