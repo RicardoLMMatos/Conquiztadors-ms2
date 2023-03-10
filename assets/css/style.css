@@ -84,6 +84,7 @@ a:active {
 	transform: translate(-50%, -50%);
 	object-fit: cover;
     z-index: -1;
+    height: 100vh;
 }
 
 /*Logo decoration*/
@@ -137,7 +138,6 @@ a:active {
     padding: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
-    width: 100%;
     max-width: 50hw;
 }
 
