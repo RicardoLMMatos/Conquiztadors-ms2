@@ -140,9 +140,14 @@ a:active {
     }
 }
 
-.game-area .row {
-    justify-content: center;
+/*Welcome area*/
+
+.welcome-area {
+    padding-bottom: 30px;
 }
+
+
+
 
 /*li decoration*/
 .quiz li {
@@ -268,7 +273,9 @@ a:active i::before {
 
 /*Question pages*/
 
-
+.game-area .row {
+    justify-content: center;
+}
 
 /*Media queries*/
 @media only screen and (min-width: 1px) and (max-width: 639px) {
