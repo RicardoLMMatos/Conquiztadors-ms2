@@ -6,16 +6,18 @@
     border: 0;
 }
 
+
+
 body {
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
     background-color: lightsteelblue;
-    /* background-image: url("/assets/images/DiscoLights-image.jpg");
+    background-image: url("/assets/images/DiscoLights2Videvo-image.webp");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    background-size: contain; */
-    /* z-index: -999; */
+    background-size: cover; 
+    z-index: -999;
 }
 
 /* Grid system */
@@ -161,6 +163,17 @@ a:active {
 }
 
 /*Button decoration*/
+
+.question-subject {
+    color: #fff;
+    background-color: blueviolet;
+    border: 2px solid orange;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .question {
     color: #fff;
     background-color: orange;
@@ -285,12 +298,7 @@ a:active i::before {
     .logo-image {
         width: 100%;
     }
-    .showcase .video-container {
-      display: none;      
-    }
-
     .dark-font {
-        color: #666;
         font-size: 70%;
     }
     
