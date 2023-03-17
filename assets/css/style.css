@@ -14,8 +14,8 @@ body {
     background-color: lightsteelblue;
     background-image: url("/assets/images/DiscoLights2Videvo-image.webp");
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
     background-size: cover; 
     z-index: -999;
 }
@@ -46,6 +46,9 @@ body {
     margin: 15px;
 }
 
+.align-justify {
+   justify-content: space-between; 
+}
 /* Card system */
 .card {
     display: flex;
@@ -80,39 +83,6 @@ a:focus,
 a:active {
     text-decoration: none;
     color: inherit;
-}
-
-/*Background video*/
-
-.showcase {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	/* padding: 0 20px; */
-}
-
-.video-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden; 
-        z-index: -999;
-}
-.video-container video {
-	min-width: 100%;
-	min-height: 100%;
-    position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	object-fit: cover;
-    z-index: -1;
-    height: 100%;
 }
 
 /*Logo decoration*/
@@ -160,6 +130,11 @@ a:active {
 
 .quiz li:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.quiz-navigation {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /*Button decoration*/
@@ -278,7 +253,7 @@ a:active i::before {
 
 .social-networks li i:hover {
     transform: scale(1.2);
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 
