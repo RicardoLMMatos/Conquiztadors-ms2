@@ -11,13 +11,23 @@
 body {
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
-    background-color: lightsteelblue;
-    background-image: url("/assets/images/DiscoLights2Videvo-image.webp");
-    background-repeat: no-repeat;
-    /* height: 100vh;
-    width: 100vw; */
-    background-size: cover; 
-    z-index: -999;
+    position: relative;
+
+}
+
+.bg-img {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    min-height: 100vh; 
 }
 
 /* Grid system */
@@ -64,7 +74,6 @@ body {
 
 .card:hover {
     transform: scale(1.05);
-    transition: all 0.5s;
 }
 
 
@@ -157,7 +166,6 @@ a:active {
     padding: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
-    /* width: 80%; */
 }
 
 .question-button {
@@ -171,18 +179,19 @@ a:active {
     cursor: pointer;
 }
 
-.submit {
-    font-size: 40px;
+.question-button.is-active {
+    background-color: green;
     color: #fff;
-    background-color: orange;
     border: 2px solid blueviolet;
-    border-radius: 10px;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer;
-    margin: 25px;
 }
 
-.btn-quit {
+.question-button.is-active {
+    background-color: red;
+    color: #fff;
+    border: 2px solid blueviolet;
+}
+
+/* .btn-quit {
     color: orange;
     padding-top: 5px;
     border-radius: 50%;
@@ -214,7 +223,7 @@ a:active {
 
 .btn-back:hover {
     transform: scale(1.5);
-}
+} */
 
 /*Footer*/
 footer {
@@ -255,6 +264,7 @@ a:active i::before {
     transform: scale(1.2);
     /* transition: all 0.5s; */
 }
+
 
 
 
