@@ -15,6 +15,7 @@ body {
 
 }
 
+/* Background image */
 .bg-img {
     position: absolute;
     top: 0; 
@@ -148,7 +149,7 @@ a:active {
 
 /*Button decoration*/
 
-.question-subject {
+.q-sub {
     color: #fff;
     background-color: blueviolet;
     border: 2px solid orange;
@@ -264,6 +265,7 @@ a:active i::before {
     transform: scale(1.2);
     /* transition: all 0.5s; */
 }
+
 
 
 
