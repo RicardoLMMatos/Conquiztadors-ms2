@@ -75,6 +75,8 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+    transition: all 0.5s;
+    box-shadow: 0 2px 8px rgb(255, 165, 0.8);
 }
 
 
@@ -183,6 +185,8 @@ a:active {
 .question-button:hover {
     transform: scale(1.01);
     transition: .25s ease-in-out;
+    box-shadow: 0 2px 8px rgb(255, 165, 0.8);
+
 }
 
 .question-button.is-active {
