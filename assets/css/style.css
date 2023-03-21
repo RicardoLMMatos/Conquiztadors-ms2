@@ -180,6 +180,11 @@ a:active {
     cursor: pointer;
 }
 
+.question-button:hover {
+    transform: scale(1.01);
+    transition: .25s ease-in-out;
+}
+
 .question-button.is-active {
     background-color: green;
     color: #fff;
@@ -198,11 +203,29 @@ a:active {
     border-radius: 10px;
     background-color: white;
     border: 5px solid orange;
-   
     font-size: 25px;
     margin: 50px;
     transition: all 0.5s;
 }
+.quit-btn:hover {
+    transform: scale(1.01);
+    transition: .25s ease-in-out;
+}
+
+
+
+/* Questions page header area */
+.questions-sub {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.subject {
+    padding-bottom: 20px;
+}
+
+.progress {
+    padding-top: 25px;
 }
 
 /*Footer*/
