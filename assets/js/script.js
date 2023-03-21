@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function() {
 // All coments were made by me to make me understand what is going on and to make sence of what I'm doing
 
 //Globals
