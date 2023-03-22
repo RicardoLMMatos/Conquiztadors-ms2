@@ -288,6 +288,9 @@ a:active i::before {
     .columns-12-6-3 {
         max-width: calc(100% - 30px);
     }
+    * {
+        font-size: 95%;
+    }
     .logo-image {
         width: 100%;
     }
