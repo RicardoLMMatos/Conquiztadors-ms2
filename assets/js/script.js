@@ -25,12 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-      //Holds the questions, answers the correct answer
-      const params = new Proxy(new URLSearchParams(windows.location.search), {
-        get: (searchParams, prop) => searchParams.get(prop)
-      });
+       // Holds the questions, answers and the correct answer
+    // This "const params = new Proxy" is something I did not learn in the course but I found it on the internet and I am trying to understand better, but I  it works like this, it gets the value of the quiz in the url and stores it in the variable quiz
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+  });
 
-      quiz = params.quiz;
+  quiz = params.quiz;
 
       //If the quiz is science,add the science questions to the  question set and so on
       if (params && quiz != undefined) {
@@ -701,6 +702,7 @@ document.addEventListener("DOMContentLoaded", function() {
          listItems.push(li);
          //Append the li to the answers list
          //answers.appendChild(li)
+        }
          
         //Shuffle the list items
          listItems = arrayShuffle(listItems);
@@ -727,16 +729,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (event.target && event.target.nodeName == "BUTTON") {
               const element = event.target;
               const isCorrect = element.getAttibute("data-content");
-              //If vthe data attributer is true, then add the is-active class(right answer)
-              if (isCorrect == true) {
-                element.className = "questio-button is-active";
+              //If vthe data attribute is true, then add the is-active class(right answer)
+              if (isCorrect == "true") {
+                element.className = "question-button is-active";
                 score++;
               } else {
                 //Else is wrong answer, add in-active class
                 element.className = "question-button in-active";
               }
               
-              answers.removeEventListener("click", clicknext);
+              answers.removeEventListener("click", clickNext);
+            }
 
               //Set a timeout so that the user can see if the answer is correct or not
               //Then load in the next question via the data indes attribute
