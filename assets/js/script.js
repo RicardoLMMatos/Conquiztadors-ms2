@@ -22,6 +22,8 @@ let questionsSet = [];
 });
 
 
+
+
 //Questions
 
 //  The sience question set array
@@ -614,4 +616,38 @@ questionsSet.push(
           }
     );
 
+    // Injects the questions into the DOM
+    function injectQuestion(index) {
+       
+      // Resets the questions and answers
+      question.innerHTML = "";
+      answers.innerHTML = "";
+      
+      //Set the index
+      //Which question set to show
+      const questionIndex = index !== undefined ? index: 0;
+
+      //Check where we are in the quiz, the progress
+      const check = checkScoreProgress(questionIndex, questionSetLeght);
+      if(!check) {
+        return;
+      }
+      //Set the current question set from the index 
+      const currentQuestion = questionsSet[questionIndex];
+      //Set the current answer from the answer set
+      const correctAnswer = currentQuestion.correctAnswer;
+      //Set the answers from the current question set
+      let currentAnswers = currentQuestion.question;
+      //Shuffle the answers
+      //currentAnswers = arrayShufle(currectAnswers)
+      //Set the question heading
+      question.innerHTML = currentQuestion.question;
+      //Set the data index attribute
+      answers.setAttribute("data-index", index);
+
+      //The list items array
+      let listItems [];
+
+
+    }
 
