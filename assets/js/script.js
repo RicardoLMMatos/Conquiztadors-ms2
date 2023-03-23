@@ -17,15 +17,27 @@ const restart = document.getElementById("restart")
 // The score
 let score = 0;
 
+//Get the value of the "quiz" in eg "https://example.com/?quiz=science"
+let quiz; //"quiz"
+
 // The question set variable
 let questionsSet = [];
+
+
+
+//Holds the questions, answers the correct answer
+const params = new Proxy(new URLSearchParams(windows.location.search), {
+  get: (searchParams, prop)  => searchParams.get(prop),
 });
 
+quiz = params.quiz;
 
-
-
-//Questions
-
+//If the quiz is science,add the science questions to the  question set and so on
+if (params && quiz != undefined) {
+  subject.innerHTML = quiz;
+}
+if (params && quiz != undefined && quiz == "science") {
+     questionsSet.push({
 //  The sience question set array
 questionsSet.push({
     question: 'What is the smallest unit of matter?',
@@ -118,9 +130,11 @@ questionsSet.push({
         'Watt'
     ]
 }
+ )
+};
 
-);
-
+if (params && quiz != undefined && quiz == "history") {
+  questionsSet.push({
  //  The history question set array
  questionsSet.push({
     question: 'Who was the first president of the United States?',
@@ -212,8 +226,10 @@ questionsSet.push({
         'William Tecumseh Sherman',
         'Thomas "Stonewall" Jackson'
     ]
-});
-
+})
+ };
+ if (params && quiz != undefined && quiz == "geography") {
+  questionsSet.push({
 //  The question geography set array
 questionsSet.push({
     question: 'What is the capital of Brazil?',
@@ -305,7 +321,10 @@ questionsSet.push({
         'Madagascar',
         'Borneo'
     ]
-});
+})
+  };
+  if (params && quiz != undefined && quiz == "maths") {
+    questionsSet.push({
 //The maths questions array
 questionsSet.push(
     {
@@ -407,8 +426,10 @@ questionsSet.push(
           'y=ab^x',
           'y=√(x-a)+b'
         ]
-    });
-
+    })
+    };
+    if (params && quiz != undefined && quiz == "movies") {
+      questionsSet.push({
     //  The movies question set array
     questionsSet.push(
         {
@@ -511,7 +532,10 @@ questionsSet.push(
               'Umbrella Corporation'
             ]
           }
-    );
+    )
+        };
+        if (params && quiz != undefined && quiz == "gaming") {
+          questionsSet.push({
     //The gaming questions array
     questionsSet.push(
         {
@@ -614,7 +638,8 @@ questionsSet.push(
               'Farm Heroes Saga'
             ]
           }
-    );
+    )
+   };
 
     // Injects the questions into the DOM
     function injectQuestion(index) {
@@ -644,10 +669,27 @@ questionsSet.push(
       question.innerHTML = currentQuestion.question;
       //Set the data index attribute
       answers.setAttribute("data-index", index);
+      
+      //Set the progress heading
+      //This will show the current question and the total number of questions
+      //Current question is set by the index above +1 (beacuse the arrays start at 0)
+      progress.innerHTML = `Question ${questionIndex+1} of ${questionsSetLenght}`; 
 
       //The list items array
-      let listItems [];
+      let listItems = [];
+      // Loop through the answers and create a li=button for each on of them
+      for (let i = 0; i < currentAnswers.lenght; i++) {
+        //set the current answer from the answers array
+        const current = currectAnswers[i];
+        //Create the li and the button
+        const li = document.getElementById("li");
+        const button = document.getElementById("button");
+        //Set the button text to the current answer
+        button.innerHTML = current;
+
+      }
 
 
     }
+  
 
