@@ -616,17 +616,17 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       //Shuffle the question set
       questionsSet = arrayShuffle(questionsSet);
-      const questionsSetLenght = questionsSet.lenght;
+      const questionsSetLength = questionsSet.length;
 
-      function checkScoreProgress(index, lenght) {
+      function checkScoreProgress(index, length) {
 
-        if (index > lenght - 1) {
+        if (index > length - 1) {
           progress.innerHTML = "";
-          if (score == lenght) {
+          if (score == length) {
 
-            total.innerHTML = `Congratulations, You are a quiz legend!! \nScore: ${score} out of ${lenght}`;
+            total.innerHTML = `Congratulations, You are a quiz legend!! \nScore: ${score} out of ${length}`;
           } else {
-            total.innerHTML = `Score: ${score} out of ${lenght}`;
+            total.innerHTML = `Score: ${score} out of ${length}`;
           }
 
           restart.className = "question-botton is-active";
@@ -650,16 +650,16 @@ document.addEventListener("DOMContentLoaded", function() {
         //Which question set to show
         const questionIndex = index !== undefined ?  index : 0;
         //Check where we are in the quiz, the progress
-        const check = checkScoreProgress(questionIndex, questionsSetLenght);
+        const check = checkScoreProgress(questionIndex, questionsSetLength);
         if (!check) {
           return;
         }
         //Set the current question set from the index 
         const currentQuestion = questionsSet[questionIndex];
         //Set the current answer from the answer set
-        const correctAnswer = currentQuestion.answers;
+        const correctAnswer = currentQuestion.correctAnswer;
         //Set the answers from the current question set
-        let currentAnswers = currentQuestion.question;
+        let currentAnswers = currentQuestion.answers;
         //Shuffle the answers
         //currentAnswers = arrayShufle(currectAnswers)
         //Set the question heading
@@ -670,17 +670,17 @@ document.addEventListener("DOMContentLoaded", function() {
         //Set the progress heading
         //This will show the current question and the total number of questions
         //Current question is set by the index above +1 (beacuse the arrays start at 0)
-        progress.innerHTML = `Question ${questionIndex+1} of ${questionsSetLenght}`;
+        progress.innerHTML = `Question ${questionIndex+1} out of ${questionsSetLength}`;
 
         //The list items array
         let listItems = [];
-        // Loop through the answers and create a li=button for each on of them
+        // Loop through the answers and create a li button for each on of them
         for (let i = 0; i < currentAnswers.lenght; i++) {
           //set the current answer from the answers array
           const current = currentAnswers[i];
           //Create the li and the button
-          const li = document.createElementById("li");
-          const button = document.createElementById("button");
+          const li = document.createElement("li");
+          const button = document.createElement("button");
           //Set the button text to the current answer
           button.innerHTML = current;
           
