@@ -211,7 +211,7 @@ a:active {
     color: #fff;
     border: 2px solid blueviolet;
 }
-.question-button.is-active::before {
+.question-button.is-active:not(#restart):before {
     content: 'correct';
 
 }
