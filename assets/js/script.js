@@ -4,25 +4,31 @@ document.addEventListener("DOMContentLoaded", function() {
       //Globals
       //The question heading
       const question = document.getElementById("question");
+      const quit = document.getElementById("quit");
+
       //The answer list
       const answers = document.getElementById("answers");
+
       //The subject heading
       const subject = document.getElementById("subject");
+
       // The progress heading 
       const progress = document.getElementById("progress");
+
       // The total score heading
       const total = document.getElementById("total");
+
       // the progress heading 
       const restart = document.getElementById("restart")
+     
       // The score
       let score = 0;
 
       //Get the value of the "quiz" in eg "https://example.com/?quiz=science"
-      let quiz; //"quiz"
+      let quiz = false; //"quiz"
 
       // The question set variable
       let questionsSet = [];
-
 
 
        // Holds the questions, answers and the correct answer
@@ -34,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
   quiz = params.quiz;
 
       //If the quiz is science,add the science questions to the  question set and so on
-      if (params && quiz != undefined) {
+      //I have used chatgpt to created the questions and answer
+      if (params && quiz) {
         subject.innerHTML = quiz;
       }
-      if (params && quiz != undefined && quiz == "science") {
+      if (params && quiz == "science") {
         //  The sience question set array
         questionsSet.push({
           question: 'What is the smallest unit of matter?',
@@ -133,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       }
 
-      if (params && quiz != undefined && quiz == "history") {
+      if (params && quiz == "history") {
         //  The history question set array
         questionsSet.push({
           question: 'Who was the first president of the United States?',
@@ -228,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
-      if (params && quiz != undefined && quiz == "geography") {
+      if (params && quiz == "geography") {
         //  The question geography set array
         questionsSet.push({
           question: 'What is the capital of Brazil?',
@@ -323,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
-      if (params && quiz != undefined && quiz == "maths") {
+      if (params && quiz == "maths") {
         //The maths questions array
         questionsSet.push({
           question: 'What is the square root of 81?',
@@ -418,7 +425,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
-      if (params && quiz != undefined && quiz == "movies") {
+      if (params && quiz == "movies") {
         //  The movies question set array
         questionsSet.push({
           question: 'What is the highest grossing movie of all time?',
@@ -514,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
-      if (params && quiz != undefined && quiz == "gaming") {
+      if (params && quiz == "gaming") {
         //The gaming questions array
         questionsSet.push({
           question: 'What is the name of the main character in "The Legend of Zelda" series?',
@@ -609,6 +616,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
+
       //Function to shuffle the arrays
       //This will randomise the order of the questions and answers                                  
       function arrayShuffle(array) {
@@ -629,7 +637,10 @@ document.addEventListener("DOMContentLoaded", function() {
             total.innerHTML = `Score: ${score} out of ${length}`;
           }
 
-          restart.className = "question-botton is-active";
+          restart.className = "question-button is-active";
+          question.className = "question is-hidden";
+          quit.className = "quit-btn is-hidden";
+          
           return false;
           //End of quiz
           //Show the score
@@ -641,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       // Injects the questions into the DOM
       function injectQuestion(index) {
-
+        
         // Resets the questions and answers
         question.innerHTML = "";
         answers.innerHTML = "";
@@ -660,6 +671,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const correctAnswer = currentQuestion.correctAnswer;
         //Set the answers from the current question set
         let currentAnswers = currentQuestion.answers;
+ 
         //Shuffle the answers
         //currentAnswers = arrayShufle(currectAnswers)
         //Set the question heading
@@ -675,9 +687,11 @@ document.addEventListener("DOMContentLoaded", function() {
         //The list items array
         let listItems = [];
         // Loop through the answers and create a li button for each on of them
-        for (let i = 0; i < currentAnswers.lenght; i++) {
+        for (let i = 0; i < currentAnswers.length; i++) {
+        
           //set the current answer from the answers array
           const current = currentAnswers[i];
+       
           //Create the li and the button
           const li = document.createElement("li");
           const button = document.createElement("button");
@@ -692,11 +706,11 @@ document.addEventListener("DOMContentLoaded", function() {
           if(i == correctAnswer) {
             button.setAttribute("data-correct", true);
           } else {
-            button.setAttribute("data-corrent", false);
+            button.setAttribute("data-correct", false);
           }
          
          //set the button class 
-         button.className = "qestion-button";
+         button.className = "question-button";
          //append the button to the list
          li.appendChild(button);
          listItems.push(li);
@@ -706,8 +720,9 @@ document.addEventListener("DOMContentLoaded", function() {
          
         //Shuffle the list items
          listItems = arrayShuffle(listItems);
+    
          //Loop through the shuffled list and append them to the answers list
-         for (let i = 0; i < listItems; i++) {
+         for (let i = 0; i < listItems.length; i++) {
           answers.appendChild(listItems[i]);
          }
         }
@@ -727,11 +742,14 @@ document.addEventListener("DOMContentLoaded", function() {
             //Check if the target is a button
             //Need to check this because the click event is added to the answers ul
             if (event.target && event.target.nodeName == "BUTTON") {
+              
               const element = event.target;
-              const isCorrect = element.getAttibute("data-content");
+              const isCorrect = element.getAttribute("data-correct");
+              console.log(isCorrect);
               //If vthe data attribute is true, then add the is-active class(right answer)
               if (isCorrect == "true") {
                 element.className = "question-button is-active";
+              
                 score++;
               } else {
                 //Else is wrong answer, add in-active class
@@ -751,7 +769,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
               // Function to add the click event to the answers list
               function clickEvent() {
-              answers.removeEventListener("click", clickNext);
+              answers.addEventListener("click", clickNext);
              }
              clickEvent();
             });

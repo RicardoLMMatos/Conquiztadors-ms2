@@ -195,10 +195,20 @@ a:active {
     border: 2px solid blueviolet;
 }
 
-.question-button.is-active {
+.question-button.in-active {
     background-color: red;
     color: #fff;
     border: 2px solid blueviolet;
+}
+
+#restart{
+    display: inline-block;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.is-hidden{
+    display: none;
 }
 
 .quit-btn {
