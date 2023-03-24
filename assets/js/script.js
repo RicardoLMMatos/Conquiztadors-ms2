@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //The maths questions array
         questionsSet.push({
           question: 'What is the square root of 81?',
-          correctAnswer: 2,
+          correctAnswer: 0,
           answers: [
             '9',
             '3',
