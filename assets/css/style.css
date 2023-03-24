@@ -71,15 +71,18 @@ body {
     border-radius: 10px;
     color: #fff;
     padding: 20px;
+    transition: all 0.5s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    transition: all 0.5s;
+
     box-shadow: 0 2px 8px rgb(255, 165, 0.8);
 }
 
-
+.card h4 {
+    color: white;
+}
 section {
     justify-content: center;
 }
@@ -94,7 +97,7 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 
 /*Logo decoration*/
@@ -105,7 +108,7 @@ a:active {
 
 .logo-image {
     width: 100%;
-    max-width: 860px;
+
     animation-name: hero-zoom;
     animation-duration: 3s;
     animation: zoomin 3s ease;
@@ -129,6 +132,11 @@ a:active {
 .welcome-area {
     padding-bottom: 30px;
 }
+
+.welcome-area p:last-of-type {
+ 
+    margin-top: 10px;
+} 
 
 
 
@@ -180,11 +188,20 @@ a:active {
     padding: 20px;
     width: 80%;
     cursor: pointer;
+    transition: .25s ease-in-out;
+    font-family: inherit;
+    position: relative;
 }
-
+.question-button::before{
+    font-size: 14px;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .question-button:hover {
     transform: scale(1.01);
-    transition: .25s ease-in-out;
+
     box-shadow: 0 2px 8px rgb(255, 165, 0.8);
 
 }
@@ -194,13 +211,19 @@ a:active {
     color: #fff;
     border: 2px solid blueviolet;
 }
+.question-button.is-active::before {
+    content: 'correct';
 
+}
 .question-button.in-active {
     background-color: red;
     color: #fff;
     border: 2px solid blueviolet;
+   
 }
-
+.question-button.in-active::before {
+    content: 'incorrect';
+}
 #restart{
     display: inline-block;
     width: fit-content;
@@ -208,7 +231,7 @@ a:active {
 }
 
 .is-hidden{
-    display: none;
+    display: none!important;
 }
 
 .quit-btn {
@@ -219,11 +242,12 @@ a:active {
     border: 5px solid orange;
     font-size: 25px;
     margin: 50px;
-    transition: all 0.5s;
+    display: inline-block;
+    transition: all .25s ease-in-out;
 }
 .quit-btn:hover {
-    transform: scale(1.01);
-    transition: .25s ease-in-out;
+    transform: scale(1.1);
+  
 }
 
 
@@ -262,6 +286,12 @@ footer {
     display: inline;
 }
 
+.social-networks a i {
+    transition: transform .25s ease-in-out;
+   
+
+}
+
 .social-networks a i::before {
     transition: color .25s ease-in-out;
     color: orange;
@@ -298,27 +328,70 @@ a:active i::before {
     .columns-12-6-3 {
         max-width: calc(100% - 30px);
     }
-    * {
+    /* * {
         font-size: 95%;
-    }
+    } */
     .logo-image {
-        width: 100%;
+        max-width: 320px;
     }
-    .dark-font {
+    /* .dark-font {
         font-size: 70%;
-    }
+    } */
     
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
     .columns-12-6-3 {
         max-width: calc(50% - 30px);
     }
+    .logo-image {
+        max-width: 420px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .columns-12-6-3 {
         max-width: calc(33.333% - 30px);
+    }
+    .logo-image {
+        max-width: 720px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
     }
 
 }

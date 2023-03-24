@@ -739,10 +739,11 @@ document.addEventListener("DOMContentLoaded", function() {
           injectQuestion(0);
 
           function clickNext(event) {
+           
             //Check if the target is a button
             //Need to check this because the click event is added to the answers ul
             if (event.target && event.target.nodeName == "BUTTON") {
-              
+              answers.removeEventListener("click", clickNext);
               const element = event.target;
               const isCorrect = element.getAttribute("data-correct");
               console.log(isCorrect);
@@ -756,15 +757,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 element.className = "question-button in-active";
               }
               
-              answers.removeEventListener("click", clickNext);
-            }
-
               //Set a timeout so that the user can see if the answer is correct or not
               //Then load in the next question via the data indes attribute
               setTimeout (function () {
                 const dataIndex = answers.getAttribute("data-index");
                 nextQuestion(dataIndex);
               }, 1000);
+            }
+            
+      
             }
     
               // Function to add the click event to the answers list
