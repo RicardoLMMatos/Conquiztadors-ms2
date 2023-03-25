@@ -631,9 +631,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index > length - 1) {
           progress.innerHTML = "";
           if (score == length) {
-
-            total.innerHTML = `Congratulations, You are a quiz legend!! \nScore: ${score} out of ${length}`;
-          } else {
+          total.innerHTML = `Congratulations, You are a quiz legend!! <br><br> Your score is: ${score} out of ${length}`;
+          } else if(score > 6) {
+            total.innerHTML = `Congratulations, You have done great!! <br><br> Your Score is: ${score} out of ${length}`; 
+          } else if(score <= 5) {total.innerHTML = `Your Score is: ${score} out of ${length} <br><br> Give it another try!`
+          }  else {
             total.innerHTML = `Score: ${score} out of ${length}`;
           }
 
