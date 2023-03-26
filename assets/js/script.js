@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function() {
           ]
         }, {
           question: 'Who was the first emperor of Rome?',
-          correctAnswer: 2,
+          correctAnswer: 1,
           answers: [
             'Julius Caesar',
             'Augustus',
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
           ]
         }, {
           question: 'What was the name of the document that ended World War I?',
-          correctAnswer: 3,
+          correctAnswer: 0,
           answers: [
             'The Treaty of Versailles',
             'The Treaty of Brest-Litovsk',
