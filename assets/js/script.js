@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function() {
           ]
         }, {
           question: 'What is the value of pi to two decimal places?',
-          correctAnswer: 1,
+          correctAnswer: 0,
           answers: [
             '3.14',
             '3.14159',
