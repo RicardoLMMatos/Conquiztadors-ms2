@@ -429,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //  The movies question set array
         questionsSet.push({
           question: 'What is the highest grossing movie of all time?',
-          correctAnswer: 2,
+          correctAnswer: 1,
           answers: [
             'Avengers: Endgame',
             'Avatar',
@@ -634,7 +634,7 @@ document.addEventListener("DOMContentLoaded", function() {
           total.innerHTML = `Congratulations, You are a quiz legend!! <br><br> Your score is: ${score} out of ${length}`;
           } else if(score > 6) {
             total.innerHTML = `Congratulations, You have done great!! <br><br> Your Score is: ${score} out of ${length}`; 
-          } else if(score <= 5) {total.innerHTML = `Your Score is: ${score} out of ${length} <br><br> <a href="questions-page1.html?quiz=${quiz}"> Give it another try!</a>`
+          } else if(score <= 5) {total.innerHTML = `Your Score is: ${score} out of ${length} <br><br> <a href="questions-page1.html?quiz=${quiz}"> Click here to give this subject another try!</a>`
           }  else {
             total.innerHTML = `Score: ${score} out of ${length}`;
           }
