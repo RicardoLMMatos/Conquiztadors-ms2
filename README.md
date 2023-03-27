@@ -28,10 +28,14 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 - [**Deployment**](#deployment)
 - [**Credits**](#credits)
 
+---
+
 ## About
 
 ConQuiztadors is a quiz game for my Code Indtitute Full-stack development ms2 project.
 The idea of making a quiz game to this project was bacause I wanted to created something  very interactive and that I personaly like which is quiz games.
+
+---
 
 
 ## User Experience (UX)
@@ -61,6 +65,8 @@ The idea of making a quiz game to this project was bacause I wanted to created s
    * I want to get random questions on all subjects.
    * I want to quckly find the links to social media pages.
 
+   ---
+
    ## Structure ##
 
  ### The website consists of two pages (home page and the questions page) 
@@ -88,6 +94,8 @@ The idea of making a quiz game to this project was bacause I wanted to created s
 
  ![Gallery page](/assets/documentation/documentation%20images/desktop-questions.png)
 
+ ---
+
  ## Design
 
 ### Colour Scheme
@@ -105,5 +113,28 @@ The logo was designed by my daughter Lara using photopea (https://www.photopea.c
 Colours used for the logo:
 
 ![ScreenShot](/assets/documentation/documentation%20images/palette.png)
+
+---
+
+### Typography
+
+For the fonts, again I wanted something bubbly and fun so I chose Sedgwick Ave with a fallback of  sans-serif.
+This is a font from googlefonts.
+
+![ScreenShot](/assets/documentation/documentation%20images/font.png)
+
+---
+
+### Imagery
+
+For this project on ly two images where used, the logo which was already metioned above and the background image. The background image is a frame capture of a video I was intending to use but I then changed my mind as it wasgoing to consume more resourses. The video is free too use and it is from (https://www.videvo.net)
+I looked for an image that would fit the colous and the subject and I believe this image fits in perfectly.
+
+Background image :
+
+![SreenShot](/assets/images/DiscoLights2Videvo-image.webp)
+
+
+
 
 
