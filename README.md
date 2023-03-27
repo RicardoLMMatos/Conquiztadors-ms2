@@ -134,6 +134,54 @@ Background image :
 
 ![SreenShot](/assets/images/DiscoLights2Videvo-image.webp)
 
+---
+https://mybundle.rewardgateway.co.uk/SmartHub
+### Wireframes
+
+
+I have used Balsamic wireframe software to create my initial wireframes, for desktop, laptop, tablet and mobile.
+The finished product came very close to the initial concept.
+
+---
+
+## Deployment
+
+The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-ms2/index.html)
+
+#### To deploy the project:
+1. In the [GitHub repository](https://github.com/), navigate to the *Settings* tab.
+2. Once in Settings, navigate to the *Pages* tab on the left hand side.
+3. In the *Build and deployment* section under *Branch*, select the **master** branch and click *Save*.
+4. Once the master branch has been selected, the page will be automatically refreshed and a display indicates the successful deployment and the link to the address.
+
+#### To run the website on a local machine:
+1. Go to the [Conquiztadors repo](https:https://github.com/RicardoLMMatos/Conquiztadors-ms2)
+2. Click on the green *Code* button and *Download ZIP*
+3. Extract the ZIP file on your local machine
+4. Run the *index.html* file in a browser
+
+#### To clone the repo:
+1. Go to the [Conquiztadors repo](https://github.com/RicardoLMMatos/Conquiztadors-ms2)
+2. Click the *Code* button to the right of the screen and copy the *HTTPs* link there
+3. Open a GitBash terminal and navigate to the directory where you want to locate the clone
+4. Type `git clone` and paste the copied *HTTPs* link, press the *Enter* key to begin the clone process
+
+---
+
+## Credits
+### Code
+ All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and some more I just clicked by.
+
+ ---
+
+ ### Media Content
+* [Google Fonts](https://fonts.google.com) - fonts.
+* [FontAwesome](https://fontawesome.com) - icons.
+* [Videvo](https://www.videvo.net/) - background image.
+* [photopea](https://www.photopea.com) - logo
+* [Fontawsome](https://fontawesome.com/) - icons
+* [Coolors](https://coolors.co/) - colour pallete
+
 
 
 
