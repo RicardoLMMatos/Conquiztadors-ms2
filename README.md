@@ -155,7 +155,7 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 4. Once the master branch has been selected, the page will be automatically refreshed and a display indicates the successful deployment and the link to the address.
 
 #### To run the website on a local machine:
-1. Go to the [Conquiztadors repo](https:https://github.com/RicardoLMMatos/Conquiztadors-ms2)
+1. Go to the [Conquiztadors repo](https://github.com/RicardoLMMatos/Conquiztadors-ms2)
 2. Click on the green *Code* button and *Download ZIP*
 3. Extract the ZIP file on your local machine
 4. Run the *index.html* file in a browser
