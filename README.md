@@ -182,10 +182,14 @@ The finished product came very close to the initial concept.
 
 ---
 
-## Technologies Used
-* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - building, structuring and presenting project
-* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - website styling
-* [Javascript]()
+## Languages used
+
+* HTML5
+* CSS3
+* Javascript
+
+## Libraries and ptrograms used
+
 * [Balsamiq](https://balsamiq.com) - wireframes
 * [Photopea](https://www.photopea.com/) - to design the logo
 * [Convertio](https://convertio.co/jpeg-webp/) - to convert images to webp
@@ -193,6 +197,9 @@ The finished product came very close to the initial concept.
 * [GIT](https://git-scm.com/), [GitHub](https://github.com/) - tracking, storing, hosting project
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools) - inspecting and debugging code
 * [Tinypng](https://tinypng.com/) - resize images
+* [Google fonts](https://fonts.google.com/) - Used to import the main font
+* [Font Awesome](https://fontawesome.com/) - Used to add social media icons
+* [Responsive Design Checker](https://responsivedesignchecker.com/) - To test the web pages on various screen sizes
 
 ---
 
