@@ -32,21 +32,21 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 
 ## About
 
-ConQuiztadors is a quiz game for my Code Indtitute Full-stack development ms2 project.
+ConQuiztadors is a quiz game for my Code Institute Full-stack developer ms2 project.
 The idea of making a quiz game to this project was bacause I wanted to created something  very interactive and that I personaly like which is quiz games.
 
-The users will have the chance to choose between six subjects, each subject has ten randomised  questions.
+I have tried to make this game bery interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions.
 On each answer the user will get a red or green light when clicking the chosen answer  (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
-At the end of each round the user will get the score and a personalised message for three typs of score, less than five correct answers, between six and nine corrected answers or ten out of ten correct answers.
+At the end of each round the user will get the score and a personalised message for three types of score, less than five correct answers, between six and nine correct answers or ten out of ten correct answers.
 
 ---
 
 
 ## User Experience (UX)
 
- ### Client Goals: 
+ ### Website owner Goals: 
 
-  * I want new new and wxisting users to play my quiz game.
+  * I want new new and existing users to play my quiz game.
   * I want players to find how the game works easely.
   * I want the quiz game to be both fun and educational.
   * I want my webpage to work as it should at all times.
@@ -188,7 +188,7 @@ The finished product came very close to the initial concept.
 * CSS3
 * Javascript
 
-## Libraries and ptrograms used
+## Libraries and programs used
 
 * [Balsamiq](https://balsamiq.com) - wireframes
 * [Photopea](https://www.photopea.com/) - to design the logo
@@ -200,6 +200,11 @@ The finished product came very close to the initial concept.
 * [Google fonts](https://fonts.google.com/) - Used to import the main font
 * [Font Awesome](https://fontawesome.com/) - Used to add social media icons
 * [Responsive Design Checker](https://responsivedesignchecker.com/) - To test the web pages on various screen sizes
+
+---
+
+## Testing
+See [TESTING.md]
 
 ---
 
