@@ -33,11 +33,11 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 ## About
 
 ConQuiztadors is a quiz game for my Code Institute Full-stack developer ms2 project.
-The idea of making a quiz game to this project was bacause I wanted to created something  very interactive and that I personaly like which is quiz games.
+The idea of making a quiz game to this project was bacause I wanted to created something very interactive and that I personaly like which is quiz games.
 
-I have tried to make this game bery interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions.
-On each answer the user will get a red or green light when clicking the chosen answer  (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
-At the end of each round the user will get the score and a personalised message for three types of score, less than five correct answers, between six and nine correct answers or ten out of ten correct answers.
+I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions.
+On each answer the user will get a red or green light when clicking the chosen answer (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
+At the end of each round the user will get the score and a personalised message for three types of score; less than five, between six and nine or ten out of ten correct answers.
 
 ---
 
@@ -47,7 +47,7 @@ At the end of each round the user will get the score and a personalised message 
  ### Website owner Goals: 
 
   * I want new new and existing users to play my quiz game.
-  * I want players to find how the game works easely.
+  * I want players to find how the game works easily.
   * I want the quiz game to be both fun and educational.
   * I want my webpage to work as it should at all times.
   * I want users to enjoy the game and return to play it again. 
@@ -55,19 +55,19 @@ At the end of each round the user will get the score and a personalised message 
 ### First Time Visitor Goals:
  
   * I want to easily find how the game works.
-  * I want to be able to start a game quickly without having to go trough lots of steps.
+  * I want to be able to start a game quickly without having to go through lots of steps.
   * I want to be able to pick a subject of my liking.
   * I want to quickly return to the subjects page at any time if I wish.
-  * I want to get my score at the end and get amsessage that relates to it.
-  * I want to quckly find the links to social media pages.
+  * I want to get my score at the end and get a message that relates to it.
+  * I want to quickly find the links to social media pages.
 
 ### Returning and frequent Visitor Goals:
 
-   * I want to be able to start a game quickly without having to go trough lots of steps.
+   * I want to be able to start a game quickly without having to go through lots of steps.
    * I want to have diferent subjects to choose from.
    * I want the game experience to be consistant every time I play the game. 
    * I want to get random questions on all subjects.
-   * I want to quckly find the links to social media pages.
+   * I want to quickly find the links to social media pages.
 
    ---
 
@@ -103,7 +103,7 @@ At the end of each round the user will get the score and a personalised message 
  The score page consists of four answers:
 
  * Subject at the top.
- * The score are where the score is shown in 0/0 (currect answers out of total questions).
+ * The score are where the score is shown in 0/0 (correct answers out of total questions).
  * A personalised message based on the score (there are three types of message).
  * A play again button linked to the home screen.
 
@@ -147,8 +147,8 @@ This is a font from googlefonts.
 
 ### Imagery
 
-For this project on ly two images where used, the logo which was already metioned above and the background image. The background image is a frame capture of a video I was intending to use but I then changed my mind as it wasgoing to consume more resourses. The video is free too use and it is from (https://www.videvo.net)
-I looked for an image that would fit the colous and the subject and I believe this image fits in perfectly.
+For this project only two images were used, the logo which was already mentioned above and the background image. The background image is a frame capture of a video I was intending to use but I then changed my mind as it was going to consume more resources. The video is free to use and it is from (https://www.videvo.net)
+I looked for an image that would fit the colours and the subject and I believe this image fits in perfectly.
 
 Background image :
 
@@ -236,15 +236,6 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 ### Code
  All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and some more I just clicked by.
 
- ---
-
- ### Media Content
-* [Google Fonts](https://fonts.google.com) - fonts.
-* [FontAwesome](https://fontawesome.com) - icons.
-* [Videvo](https://www.videvo.net/) - background image.
-* [photopea](https://www.photopea.com) - logo
-* [Fontawsome](https://fontawesome.com/) - icons
-* [Coolors](https://coolors.co/) - colour pallete
 
 
 
