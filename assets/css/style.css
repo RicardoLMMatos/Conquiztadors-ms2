@@ -270,6 +270,8 @@ h4 a:hover {
 
 .subject {
     padding-bottom: 20px;
+    color: orange;
+    font-size: 200%;
 }
 
 .progress {
