@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const total = document.getElementById("total");
 
       // the progress heading 
-      const restart = document.getElementById("restart")
+      const restart = document.getElementById("restart");
      
       // The score
       let score = 0;
