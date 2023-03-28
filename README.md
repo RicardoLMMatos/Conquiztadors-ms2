@@ -35,6 +35,10 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 ConQuiztadors is a quiz game for my Code Indtitute Full-stack development ms2 project.
 The idea of making a quiz game to this project was bacause I wanted to created something  very interactive and that I personaly like which is quiz games.
 
+The users will have the chance to choose between six subjects, each subject has ten randomised  questions.
+On each answer the user will get a red or green light when clicking the chosen answer  (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
+At the end of each round the user will get the score and a personalised message for three typs of score, less than five correct answers, between six and nine corrected answers or ten out of ten correct answers.
+
 ---
 
 
@@ -69,7 +73,7 @@ The idea of making a quiz game to this project was bacause I wanted to created s
 
    ## Structure ##
 
- ### The website consists of two pages (home page and the questions page) 
+ ### The website consists of three pages (home page, questions page and score) 
 
 ### Home Page
 
@@ -93,6 +97,22 @@ The idea of making a quiz game to this project was bacause I wanted to created s
  * The answers area.
 
  ![Gallery page](/assets/documentation/documentation%20images/desktop-questions.png)
+
+ ### Score page 
+
+ The score page consists of four answers:
+
+ * Subject at the top.
+ * The score are where the score is shown in 0/0 (currect answers out of total questions).
+ * A personalised message based on the score (there are three types of message).
+ * A play again button linked to the home screen.
+
+ ![Score page](/assets/documentation/documentation%20images/score.png) 
+
+ | Medium score                                                         | Highest score                                                           |
+| ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
+| ![medium score](/assets/documentation/documentation%20images/med-score.png) | ![high score](/assets/documentation/documentation%20images/max-score.png)  |
+
 
  ---
 
@@ -135,12 +155,44 @@ Background image :
 ![SreenShot](/assets/images/DiscoLights2Videvo-image.webp)
 
 ---
-https://mybundle.rewardgateway.co.uk/SmartHub
+
 ### Wireframes
 
 
 I have used Balsamic wireframe software to create my initial wireframes, for desktop, laptop, tablet and mobile.
 The finished product came very close to the initial concept.
+
+| Desktop Homepage                                                          | Desktop Questions page                                                           |
+| ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
+| ![Index page wireframe](/assets/documentation/documentation%20images/desk-home-wire.png) | ![Questions page wireframe](/assets/documentation/documentation%20images/desk-questions-wire.png)  |
+
+| Mobile homepage                                                           | Mobile questions page                                                            |
+| ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
+| ![Index page wireframe](/assets/documentation/documentation%20images/mob-home-wire.png)     | ![questions page wireframe](/assets/documentation/documentation%20images/mob-questions-wire.png)      |
+
+ * [Desktop home page wireframe](/assets/documentation/documentation%20images/desk-home-wire.png)
+ * [Desktop questions page wireframe](/assets/documentation/documentation%20images/desk-questions-wire.png)
+ * [Desktop score page wireframe](/assets/documentation/documentation%20images/desk-score-wire.png)
+ * [Tablet home page wireframe](/assets/documentation/documentation%20images/tab-home-wire.png)
+ * [Tablet questions page wireframe](/assets/documentation/documentation%20images/tab-questions-wire.png)
+ * [Tablet score page wireframe](/assets/documentation/documentation%20images/tab-score-wire.png)
+ * [Mobile home page wireframe](/assets/documentation/documentation%20images/mob-home-wire.png)
+ * [Mobile questions page wireframe](/assets/documentation/documentation%20images/mob-questions-wire.png)
+ * [Mobile score page wireframe](/assets/documentation/documentation%20images/mob-score-wire.png)
+
+---
+
+## Technologies Used
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - building, structuring and presenting project
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - website styling
+* [Javascript]()
+* [Balsamiq](https://balsamiq.com) - wireframes
+* [Photopea](https://www.photopea.com/) - to design the logo
+* [Convertio](https://convertio.co/jpeg-webp/) - to convert images to webp
+* [VScode](https://code.visualstudio.com) - code editing
+* [GIT](https://git-scm.com/), [GitHub](https://github.com/) - tracking, storing, hosting project
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools) - inspecting and debugging code
+* [Tinypng](https://tinypng.com/) - resize images
 
 ---
 
