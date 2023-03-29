@@ -109,7 +109,8 @@
         return res.json();
       })
       .then(json => {
-        displayCategories(json);
+        // displayCategories(json);
+        fallback();
       })
       .catch(error => {
         fallback();

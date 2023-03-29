@@ -47,38 +47,58 @@ document.addEventListener("DOMContentLoaded", function() {
         subject.innerHTML = quiz;
       }
      
+           //Function to shuffle the arrays
+      //This will randomise the order of the questions and answers                                  
+      function arrayShuffle(array) {
+        return array.sort((a, b) => 0.5 - Math.random());
+      }
     // fetch request from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     /*
       To extract the JSON body content from the Response object, 
       we use the json() method, 
       which returns a second promise that resolves with the result of parsing the response body text as JSON.
     */
+   
+   function displayQuestions(data){
+      const arr = [];
+      for(let i = 0; i < data.length; i++){
+        // console.log(data[i]);
+        let answers = [];
+        const { question, correctAnswer, incorrectAnswers } = data[i];
+        
+        answers.push(correctAnswer, ...incorrectAnswers);
+        answers = arrayShuffle(answers);
+        const correctAnswerIndex = answers.indexOf(correctAnswer);
+        
+    
+        arr.push({
+          question: question,
+          correctAnswer: correctAnswerIndex,
+          answers: answers
+        });
+     
+      }
+
+      return arr;
+     
+
+    
+      
+   }
+   
     fetch(`https://the-trivia-api.com/api/questions?limit=10&categories=${trivia_api}`)
     .then(res => {
       return res.json();
     })
     .then(json => {
+      return displayQuestions(json);
      
     })
     .catch(error => {
       questionsFailed = true;
     });
-    
-      if(trivia_api && trivia_api == 'true' && questionsFailed === false){
-      
-       
-        // questionsSet.push({
-        //   question: 'What is the smallest unit of matter?',
-        //   correctAnswer: 0,
-        //   answers: [
-        //     'Atom',
-        //     'Molecule',
-        //     'Element',
-        //     'Compound'
-        //   ]
-        // });
-
-      } else if(trivia_api && trivia_api == 'true' && questionsFailed === true || trivia_api && trivia_api == 'false' ){
+   
+      if(trivia_api && trivia_api == 'true' && questionsFailed === true || trivia_api && trivia_api == 'false' ){
        
       if (params && quiz == "science") {
         //  The sience question set array
@@ -173,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'Watt'
           ]
         });
-
+    // console.log('static question set: ', questionsSet);
       }
 
       if (params && quiz == "history") {
@@ -192,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
           correctAnswer: 0,
           answers: [
             '1945',
-            '1941',
+            '1941', 
             '1950',
             '1943'
           ]
@@ -653,11 +673,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       }
     }
-      //Function to shuffle the arrays
-      //This will randomise the order of the questions and answers                                  
-      function arrayShuffle(array) {
-        return array.sort((a, b) => 0.5 - Math.random());
-      }
       //Shuffle the question set
       questionsSet = arrayShuffle(questionsSet);
       const questionsSetLength = questionsSet.length;
@@ -690,7 +705,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       // Injects the questions into the DOM
       function injectQuestion(index) {
-        
+         
         // Resets the questions and answers
         question.innerHTML = "";
         answers.innerHTML = "";
