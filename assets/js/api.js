@@ -1,9 +1,102 @@
 
-    function displayCategories(json){
-      console.log(json);
-      for(let i = 0; i < json.length; i++){
+    const categoriesDiv = document.getElementById('categories');
+    const science = document.getElementById('science');
+    let html;
+    function fallback(){
+        html = 
+        `<div class="column columns-12-6-3">
+        <a href="questions-page1.html?quiz=science" class="card">
+            <h4>Science</h4>
+        </a>
+    </div>
+    <div class="column columns-12-6-3">
 
-      }
+        <a href="questions-page1.html?quiz=history" class="card">
+            <h4>History</h4>
+        </a>
+
+    </div>
+    <div class="column columns-12-6-3">
+
+        <a href="questions-page1.html?quiz=geography" class="card">
+            <h4>Geography</h4>
+        </a>
+
+    </div>
+    <div class="column columns-12-6-3">
+
+        <a href="questions-page1.html?quiz=maths" class="card">
+            <h4>Maths</h4>
+        </a>
+
+    </div>
+    <div class="column columns-12-6-3">
+
+        <a href="questions-page1.html?quiz=movies" class="card">
+            <h4>Movies</h4>
+        </a>
+
+    </div>
+    <div class="column columns-12-6-3">
+
+        <a href="questions-page1.html?quiz=gaming" class="card">
+            <h4>Gaming</h4>
+        </a>
+
+    </div>`;
+    categoriesDiv.innerHTML = html;
+    }
+    function displayCategories(json){
+      // console.log(json);
+      const { ["Science"]: science, ["History"]: history, ["Geography"]: geography, ["General Knowledge"]: gK, ["Film & TV"]: tV, ["Music"]: music } = json;
+      // console.log(science[0]);
+      // console.log(history[0]);
+      // console.log(geography[0]);
+      // console.log(gK[0]);
+      // console.log(tV[2]);
+      // console.log(music[0]);
+      html = 
+      `<div class="column columns-12-6-3">
+      <a href="questions-page1.html?quiz=${science[0]}" class="card">
+          <h4>Science</h4>
+      </a>
+  </div>
+  <div class="column columns-12-6-3">
+
+      <a href="questions-page1.html?quiz=${history[0]}" class="card">
+          <h4>History</h4>
+      </a>
+
+  </div>
+  <div class="column columns-12-6-3">
+
+      <a href="questions-page1.html?quiz=${geography[0]}" class="card">
+          <h4>Geography</h4>
+      </a>
+
+  </div>
+  <div class="column columns-12-6-3">
+
+      <a href="questions-page1.html?quiz=${gK[0]}" class="card">
+          <h4>General Knowledge</h4>
+      </a>
+
+  </div>
+  <div class="column columns-12-6-3">
+
+      <a href="questions-page1.html?quiz=${tV[0]}" class="card">
+          <h4>Film & TV</h4>
+      </a>
+
+  </div>
+  <div class="column columns-12-6-3">
+
+      <a href="questions-page1.html?quiz=${music[0]}" class="card">
+          <h4>Music</h4>
+      </a>
+
+  </div>`;
+  categoriesDiv.innerHTML = html;
     }
     // fetch request from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     /*
@@ -19,10 +112,10 @@
         displayCategories(json);
       })
       .catch(error => {
-        return false;
+        fallback();
       });
 
   
  
 
-  
+     
