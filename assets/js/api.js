@@ -5,41 +5,41 @@
     function fallback(){
         html = 
         `<div class="column columns-12-6-3">
-        <a href="questions-page1.html?quiz=science" class="card">
+        <a href="questions-page1.html?quiz=science&trivia_api=false" class="card">
             <h4>Science</h4>
         </a>
     </div>
     <div class="column columns-12-6-3">
 
-        <a href="questions-page1.html?quiz=history" class="card">
+        <a href="questions-page1.html?quiz=history&trivia_api=false" class="card">
             <h4>History</h4>
         </a>
 
     </div>
     <div class="column columns-12-6-3">
 
-        <a href="questions-page1.html?quiz=geography" class="card">
+        <a href="questions-page1.html?quiz=geography&trivia_api=false" class="card">
             <h4>Geography</h4>
         </a>
 
     </div>
     <div class="column columns-12-6-3">
 
-        <a href="questions-page1.html?quiz=maths" class="card">
+        <a href="questions-page1.html?quiz=maths&trivia_api=false" class="card">
             <h4>Maths</h4>
         </a>
 
     </div>
     <div class="column columns-12-6-3">
 
-        <a href="questions-page1.html?quiz=movies" class="card">
+        <a href="questions-page1.html?quiz=movies&trivia_api=false" class="card">
             <h4>Movies</h4>
         </a>
 
     </div>
     <div class="column columns-12-6-3">
 
-        <a href="questions-page1.html?quiz=gaming" class="card">
+        <a href="questions-page1.html?quiz=gaming&trivia_api=false" class="card">
             <h4>Gaming</h4>
         </a>
 
@@ -57,41 +57,41 @@
       // console.log(music[0]);
       html = 
       `<div class="column columns-12-6-3">
-      <a href="questions-page1.html?quiz=${science[0]}" class="card">
+      <a href="questions-page1.html?quiz=${science[0]}&trivia_api=true" class="card">
           <h4>Science</h4>
       </a>
   </div>
   <div class="column columns-12-6-3">
 
-      <a href="questions-page1.html?quiz=${history[0]}" class="card">
+      <a href="questions-page1.html?quiz=${history[0]}&trivia_api=true" class="card">
           <h4>History</h4>
       </a>
 
   </div>
   <div class="column columns-12-6-3">
 
-      <a href="questions-page1.html?quiz=${geography[0]}" class="card">
+      <a href="questions-page1.html?quiz=${geography[0]}&trivia_api=true" class="card">
           <h4>Geography</h4>
       </a>
 
   </div>
   <div class="column columns-12-6-3">
 
-      <a href="questions-page1.html?quiz=${gK[0]}" class="card">
+      <a href="questions-page1.html?quiz=${gK[0]}&trivia_api=true" class="card">
           <h4>General Knowledge</h4>
       </a>
 
   </div>
   <div class="column columns-12-6-3">
 
-      <a href="questions-page1.html?quiz=${tV[0]}" class="card">
+      <a href="questions-page1.html?quiz=${tV[0]}&trivia_api=true" class="card">
           <h4>Film & TV</h4>
       </a>
 
   </div>
   <div class="column columns-12-6-3">
 
-      <a href="questions-page1.html?quiz=${music[0]}" class="card">
+      <a href="questions-page1.html?quiz=${music[0]}&trivia_api=true" class="card">
           <h4>Music</h4>
       </a>
 

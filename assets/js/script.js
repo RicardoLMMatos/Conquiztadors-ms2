@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // The question set variable
       let questionsSet = [];
 
+      let questionsFailed = false;
 
        // Holds the questions, answers and the correct answer
     // This "const params = new Proxy" is something I did not learn in the course but I found it on the internet and I am trying to understand better, but I  it works like this, it gets the value of the quiz in the url and stores it in the variable quiz
@@ -38,12 +39,47 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   quiz = params.quiz;
-
+  trivia_api = params.trivia_api;
+ 
       //If the quiz is science,add the science questions to the  question set and so on
       //I have used chatgpt to created the questions and answer
       if (params && quiz) {
         subject.innerHTML = quiz;
       }
+     
+    // fetch request from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    /*
+      To extract the JSON body content from the Response object, 
+      we use the json() method, 
+      which returns a second promise that resolves with the result of parsing the response body text as JSON.
+    */
+    fetch(`https://the-trivia-api.com/api/questions?limit=10&categories=${trivia_api}`)
+    .then(res => {
+      return res.json();
+    })
+    .then(json => {
+     
+    })
+    .catch(error => {
+      questionsFailed = true;
+    });
+    
+      if(trivia_api && trivia_api == 'true' && questionsFailed === false){
+      
+       
+        // questionsSet.push({
+        //   question: 'What is the smallest unit of matter?',
+        //   correctAnswer: 0,
+        //   answers: [
+        //     'Atom',
+        //     'Molecule',
+        //     'Element',
+        //     'Compound'
+        //   ]
+        // });
+
+      } else if(trivia_api && trivia_api == 'true' && questionsFailed === true || trivia_api && trivia_api == 'false' ){
+       
       if (params && quiz == "science") {
         //  The sience question set array
         questionsSet.push({
@@ -616,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
-
+    }
       //Function to shuffle the arrays
       //This will randomise the order of the questions and answers                                  
       function arrayShuffle(array) {
