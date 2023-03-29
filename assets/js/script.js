@@ -60,9 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
     */
    
    function displayQuestions(data){
-      const arr = [];
+  
+    
       for(let i = 0; i < data.length; i++){
-        // console.log(data[i]);
+        console.log(data[i]);
+      
         let answers = [];
         const { question, correctAnswer, incorrectAnswers } = data[i];
         
@@ -71,33 +73,40 @@ document.addEventListener("DOMContentLoaded", function() {
         const correctAnswerIndex = answers.indexOf(correctAnswer);
         
     
-        arr.push({
+        questionsSet.push({
           question: question,
           correctAnswer: correctAnswerIndex,
           answers: answers
         });
      
       }
-
-      return arr;
-     
-
-    
       
+      injectQuestion(0, questionsSet);
+    
+       
    }
    
-    fetch(`https://the-trivia-api.com/api/questions?limit=10&categories=${trivia_api}`)
+
+  fetch(`https://the-trivia-api.com/api/questions?limit=10&categories=${quiz}&difficulty=easy`)
     .then(res => {
       return res.json();
     })
     .then(json => {
-      return displayQuestions(json);
+      displayQuestions(json);
      
     })
     .catch(error => {
       questionsFailed = true;
     });
-   
+
+
+  
+
+
+
+
+
+
       if(trivia_api && trivia_api == 'true' && questionsFailed === true || trivia_api && trivia_api == 'false' ){
        
       if (params && quiz == "science") {
@@ -672,10 +681,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       }
+         //Shuffle the question set
+         questionsSet = arrayShuffle(questionsSet);
+         injectQuestion(0, questionsSet);
     }
-      //Shuffle the question set
-      questionsSet = arrayShuffle(questionsSet);
-      const questionsSetLength = questionsSet.length;
+   
+  
 
       function checkScoreProgress(index, length) {
 
@@ -703,9 +714,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       
       }
+  
       // Injects the questions into the DOM
-      function injectQuestion(index) {
+      function injectQuestion(index, questions) {
          
+        const questionsSetLength = questions.length;
+
         // Resets the questions and answers
         question.innerHTML = "";
         answers.innerHTML = "";
@@ -719,7 +733,7 @@ document.addEventListener("DOMContentLoaded", function() {
           return;
         }
         //Set the current question set from the index 
-        const currentQuestion = questionsSet[questionIndex];
+        const currentQuestion = questions[questionIndex];
         //Set the current answer from the answer set
         const correctAnswer = currentQuestion.correctAnswer;
         //Set the answers from the current question set
@@ -784,12 +798,12 @@ document.addEventListener("DOMContentLoaded", function() {
         function nextQuestion(index) {
           // the question set to show is set by the index (0, 1, 2, 3, etc.)
           const dataIndex = index !== undefined ? ++index : 0;
-          injectQuestion(dataIndex);
+          injectQuestion(dataIndex, questionsSet);
           // The function to add the click event to the answers list
           clickEvent();
         }
 
-          injectQuestion(0);
+          
 
           function clickNext(event) {
            
