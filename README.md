@@ -1,7 +1,7 @@
 # Conquiztadors-ms2
 
 
-![ScreenShot](/assets/documentation/documentation%20images/mockup.png)
+![ScreenShot](/documentation/documentation%20images/mockup.png)
 
 You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-ms2/)
 
@@ -153,7 +153,7 @@ I looked for an image that would fit the colours and the subject and I believe t
 
 Background image :
 
-![SreenShot](/images/DiscoLights2Videvo-image.webp)
+![SreenShot](/assets/images/DiscoLights2Videvo-image.webp)
 
 ---
 
