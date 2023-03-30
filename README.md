@@ -9,22 +9,22 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 
 ## Table of Contents
 
-- [**Introduction**](#Initial-Discusion)
-  - [Client Goals](#Client-goals)
+- [**Introduction**](#About)
+  - [Client Goals](#Website-owner-Goals)
   - [User Goals](#First-Time-Visitor-Goals)
 - [**Structure**](#Structure)
-  - [Common sections](#Common-sections)
   - [Home page](#Home-page)
-  - [Gallery page](#Gallery-page)
-  - [Contact us Page](#Contact-us-Page)
-- [**Future Implementations**](#Future-Implementations)
+  - [Questions page](#Questions-page)
+  - [Score-page](#Score-page)
 - [**Design**](#Design)
   - [Colour Scheme](#ColourScheme)
   - [Typography](#Typography)
+  - [The logo](#The-logo)
   - [Imagery](#Imagery)
   - [Wireframes](#Wireframes)
 - [**Technologies Used**](#technologies-used)
 - [**Testing**](#testing)
+- [**Future Implementations**](#Future-Implementations)
 - [**Deployment**](#deployment)
 - [**Credits**](#credits)
 
@@ -85,7 +85,7 @@ At the end of each round the user will get the score and a personalised message 
  * Subjects buttons.
  * Social media links.
 
- ![Home page](/assets/documentation/documentation%20images/desk-home.png)
+ ![Home page](/documentation/documentation%20images/desk-home.png)
 
 ### Questions page
 
@@ -96,7 +96,7 @@ At the end of each round the user will get the score and a personalised message 
  * The question area.
  * The answers area.
 
- ![Gallery page](/assets/documentation/documentation%20images/desktop-questions.png)
+ ![Gallery page](/documentation/documentation%20images/desktop-questions.png)
 
  ### Score page 
 
@@ -107,11 +107,11 @@ At the end of each round the user will get the score and a personalised message 
  * A personalised message based on the score (there are three types of message).
  * A play again button linked to the home screen.
 
- ![Score page](/assets/documentation/documentation%20images/score.png) 
+ ![Score page](/documentation/documentation%20images/score.png) 
 
  | Medium score                                                         | Highest score                                                           |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![medium score](/assets/documentation/documentation%20images/med-score.png) | ![high score](/assets/documentation/documentation%20images/max-score.png)  |
+| ![medium score](/documentation/documentation%20images/med-score.png) | ![high score](/documentation/documentation%20images/max-score.png)  |
 
 
  ---
@@ -122,26 +122,27 @@ At the end of each round the user will get the score and a personalised message 
 
 For the colours wanted the game to feel fun and relaxing so I choose warm, bright, complementary and contrasting colours.
 
-![ScreenShot](/assets/documentation/documentation%20images/colours-palette.png)
+![ScreenShot](/documentation/documentation%20images/colours-palette.png)
+
 
 ## The logo
 
 The logo was designed by my daughter Lara using photopea (https://www.photopea.com/) as she wanted to be involved. 
 
-![ScreenShot](/assets/images/conquiztadors-logo.webp)
+![ScreenShot](/images/conquiztadors-logo.webp)
 
 Colours used for the logo:
 
-![ScreenShot](/assets/documentation/documentation%20images/palette.png)
+![ScreenShot](/documentation/documentation%20images/palette.png)
 
 ---
 
 ### Typography
 
-For the fonts, again I wanted something bubbly and fun so I chose Sedgwick Ave with a fallback of  sans-serif.
-This is a font from googlefonts.
+For the fonts, again I wanted something that would match the theme and fun so I chose the "Alkatra" font with a fallback of sans-serif.
+[Font on Google fonts](https://fonts.google.com/specimen/Alkatra?query=alkatra)
 
-![ScreenShot](/assets/documentation/documentation%20images/font.png)
+![ScreenShot](/documentation/documentation%20images/font.png)
 
 ---
 
@@ -152,7 +153,7 @@ I looked for an image that would fit the colours and the subject and I believe t
 
 Background image :
 
-![SreenShot](/assets/images/DiscoLights2Videvo-image.webp)
+![SreenShot](/images/DiscoLights2Videvo-image.webp)
 
 ---
 
@@ -164,32 +165,32 @@ The finished product came very close to the initial concept.
 
 | Desktop Homepage                                                          | Desktop Questions page                                                           |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Index page wireframe](/assets/documentation/documentation%20images/desk-home-wire.png) | ![Questions page wireframe](/assets/documentation/documentation%20images/desk-questions-wire.png)  |
+| ![Index page wireframe](/documentation/documentation%20images/desk-home-wire.png) | ![Questions page wireframe](/documentation/documentation%20images/desk-questions-wire.png)  |
 
 | Mobile homepage                                                           | Mobile questions page                                                            |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Index page wireframe](/assets/documentation/documentation%20images/mob-home-wire.png)     | ![questions page wireframe](/assets/documentation/documentation%20images/mob-questions-wire.png)      |
+| ![Index page wireframe](/documentation/documentation%20images/mob-home-wire.png)     | ![questions page wireframe](/documentation/documentation%20images/mob-questions-wire.png)      |
 
- * [Desktop home page wireframe](/assets/documentation/documentation%20images/desk-home-wire.png)
- * [Desktop questions page wireframe](/assets/documentation/documentation%20images/desk-questions-wire.png)
- * [Desktop score page wireframe](/assets/documentation/documentation%20images/desk-score-wire.png)
- * [Tablet home page wireframe](/assets/documentation/documentation%20images/tab-home-wire.png)
- * [Tablet questions page wireframe](/assets/documentation/documentation%20images/tab-questions-wire.png)
- * [Tablet score page wireframe](/assets/documentation/documentation%20images/tab-score-wire.png)
- * [Mobile home page wireframe](/assets/documentation/documentation%20images/mob-home-wire.png)
- * [Mobile questions page wireframe](/assets/documentation/documentation%20images/mob-questions-wire.png)
- * [Mobile score page wireframe](/assets/documentation/documentation%20images/mob-score-wire.png)
+ * [Desktop home page wire](/documentation/documentation%20images/desk-home-wire.png)
+ * [Desktop questions page wireframe](/documentation/documentation%20images/desk-questions-wire.png)
+ * [Desktop score page wireframe](/documentation/documentation%20images/desk-score-wire.png)
+ * [Tablet home page wireframe](/documentation/documentation%20images/tab-home-wire.png)
+ * [Tablet questions page wireframe](/documentation/documentation%20images/tab-questions-wire.png)
+ * [Tablet score page wireframe](/documentation/documentation%20images/tab-score-wire.png)
+ * [Mobile home page wireframe](/documentation/documentation%20images/mob-home-wire.png)
+ * [Mobile questions page wireframe](/documentation/documentation%20images/mob-questions-wire.png)
+ * [Mobile score page wireframe](/documentation/documentation%20images/mob-score-wire.png)
 
 ---
 
 ## Languages used
 
-* HTML5
-* CSS3
-* Javascript
+* [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+* [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+* [Javascript](https://www.javascript.com) used for user interaction on the site.
 
 ## Libraries and programs used
-
+* [The Trivia API](https://the-trivia-api.com/) - This is the API used to get the questions and answers
 * [Balsamiq](https://balsamiq.com) - wireframes
 * [Photopea](https://www.photopea.com/) - to design the logo
 * [Convertio](https://convertio.co/jpeg-webp/) - to convert images to webp
@@ -205,6 +206,15 @@ The finished product came very close to the initial concept.
 
 ## Testing
 See [TESTING.md]
+
+---
+
+## Future Implementations
+
+In the future I would like to add:
+ * A way for the user to input a username at the beggining of the game and get a highscores board at the end of the quiz game.
+ * More subjects.
+ * Diferent game types, such as rounds with time limits.
 
 ---
 
@@ -233,8 +243,24 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 ---
 
 ## Credits
-### Code
+
+### Media Content
+
+* [The Trivia API](https://the-trivia-api.com/) - This is the API used to get the questions and answers
+* [Google Fonts](https://fonts.google.com) - fonts
+* [FontAwesome](https://fontawesome.com) - icons
+* [La Torre restaurant](https://www.latorrerestaurant.com/) - gallery images
+* [Pixabay](https://pixabay.com) - free Images
+* [Photopea](https://www.photopea.com/) - to design the logo
+* [Fontawsome](https://fontawesome.com/) - icons
+* [Gimp](https://www.gimp.org/) -favicon
+* [Coolors](https://coolors.co/) - colour pallete
+
+## Code
  All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and some more I just clicked by.
+
+
+[Back to top](#contents)
 
 
 
