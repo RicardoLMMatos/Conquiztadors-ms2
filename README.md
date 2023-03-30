@@ -35,7 +35,7 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 ConQuiztadors is a quiz game for my Code Institute Full-stack developer ms2 project.
 The idea of making a quiz game to this project was bacause I wanted to created something very interactive and that I personaly like which is quiz games.
 
-I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions.
+I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions for which I have used an API to fetch. [The trivia API](https://the-trivia-api.com/).
 On each answer the user will get a red or green light when clicking the chosen answer (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
 At the end of each round the user will get the score and a personalised message for three types of score; less than five, between six and nine or ten out of ten correct answers.
 
@@ -129,7 +129,7 @@ For the colours wanted the game to feel fun and relaxing so I choose warm, brigh
 
 The logo was designed by my daughter Lara using photopea (https://www.photopea.com/) as she wanted to be involved. 
 
-![ScreenShot](/images/conquiztadors-logo.webp)
+![ScreenShot](/assets/images/conquiztadors-logo.webp)
 
 Colours used for the logo:
 
