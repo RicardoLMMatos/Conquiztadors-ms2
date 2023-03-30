@@ -36,7 +36,7 @@ ConQuiztadors is a quiz game for my Code Institute Full-stack developer ms2 proj
 The idea of making a quiz game to this project was bacause I wanted to created something very interactive and that I personaly like which is quiz games.
 
 I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions for which I have used an API to fetch. [The trivia API](https://the-trivia-api.com/).
-On each answer the user will get a red or green light when clicking the chosen answer (red for wrong and green for right answer) and the user will also get a message after pressing the button with right or wrong text.
+On each answer the user will get a red or green light when clicking the chosen answer (red for wrong and green for right answer) and a message with the words "right" or "wrong" will also apear.
 At the end of each round the user will get the score and a personalised message for three types of score; less than five, between six and nine or ten out of ten correct answers.
 
 ---
@@ -100,10 +100,10 @@ At the end of each round the user will get the score and a personalised message 
 
  ### Score page 
 
- The score page consists of four answers:
+ The score page consists of four sections:
 
- * Subject at the top.
- * The score are where the score is shown in 0/0 (correct answers out of total questions).
+ * Questions Subject at the top.
+ * The score section. The score is shown in 0/0 (correct answers out of total questions).
  * A personalised message based on the score (there are three types of message).
  * A play again button linked to the home screen.
 
