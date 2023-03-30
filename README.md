@@ -249,18 +249,18 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 * [The Trivia API](https://the-trivia-api.com/) - This is the API used to get the questions and answers
 * [Google Fonts](https://fonts.google.com) - fonts
 * [FontAwesome](https://fontawesome.com) - icons
-* [La Torre restaurant](https://www.latorrerestaurant.com/) - gallery images
 * [Pixabay](https://pixabay.com) - free Images
 * [Photopea](https://www.photopea.com/) - to design the logo
 * [Fontawsome](https://fontawesome.com/) - icons
 * [Gimp](https://www.gimp.org/) -favicon
 * [Coolors](https://coolors.co/) - colour pallete
+* [Videvo](https://www.videvo.net) - Background
 
 ## Code
  All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and some more I just clicked by.
 
 
-[Back to top](#contents)
+[Back to top](Conquiztadors-ms2)
 
 
 
