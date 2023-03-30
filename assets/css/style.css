@@ -10,7 +10,7 @@
 
 body {
     color: #fff;
-    font-family: 'Alkatra','Sedgwick Ave', sans-serif;
+    font-family: 'Alkatra', sans-serif;
     position: relative;
 
 }
@@ -18,7 +18,7 @@ body {
 /* Background image */
 .bg-img {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -28,7 +28,7 @@ body {
     object-fit: cover;
     object-position: center;
     display: block;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 /* Grid system */
@@ -58,8 +58,9 @@ body {
 }
 
 .align-justify {
-   justify-content: space-between; 
+    justify-content: space-between;
 }
+
 /* Card system */
 .card {
     display: flex;
@@ -83,6 +84,7 @@ body {
 .card h4 {
     color: white;
 }
+
 section {
     justify-content: center;
 }
@@ -97,7 +99,6 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
-    /* color: inherit; */
 }
 
 /*Logo decoration*/
@@ -138,17 +139,14 @@ h4 a:hover {
 }
 
 /*Welcome area*/
-
 .welcome-area {
     padding-bottom: 30px;
 }
 
 .welcome-area p:last-of-type {
- 
+
     margin-top: 10px;
-} 
-
-
+}
 
 
 /*li decoration*/
@@ -168,7 +166,6 @@ h4 a:hover {
 }
 
 /*Button decoration*/
-
 .q-sub {
     color: #fff;
     background-color: blueviolet;
@@ -202,13 +199,15 @@ h4 a:hover {
     font-family: inherit;
     position: relative;
 }
-.question-button::before{
+
+.question-button::before {
     font-size: 14px;
     position: absolute;
     bottom: 2px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .question-button:hover {
     transform: scale(1.01);
 
@@ -221,27 +220,31 @@ h4 a:hover {
     color: #fff;
     border: 2px solid blueviolet;
 }
+
 .question-button.is-active:not(#restart):before {
     content: 'correct';
 
 }
+
 .question-button.in-active {
     background-color: red;
     color: #fff;
     border: 2px solid blueviolet;
-   
+
 }
+
 .question-button.in-active::before {
     content: 'incorrect';
 }
-#restart{
+
+#restart {
     display: inline-block;
     width: fit-content;
     margin-top: 50px;
 }
 
-.is-hidden{
-    display: none!important;
+.is-hidden {
+    display: none !important;
 }
 
 .quit-btn {
@@ -255,12 +258,11 @@ h4 a:hover {
     display: inline-block;
     transition: all .25s ease-in-out;
 }
+
 .quit-btn:hover {
     transform: scale(1.1);
-  
+
 }
-
-
 
 /* Questions page header area */
 .questions-sub {
@@ -281,7 +283,7 @@ h4 a:hover {
 /*Footer*/
 footer {
     position: relative;
-   
+
 }
 
 /*Social networks links decoration*/
@@ -300,7 +302,7 @@ footer {
 
 .social-networks a i {
     transition: transform .25s ease-in-out;
-   
+
 
 }
 
@@ -321,7 +323,6 @@ a:active i::before {
 
 .social-networks li i:hover {
     transform: scale(1.2);
-    /* transition: all 0.5s; */
 }
 
 
@@ -340,26 +341,24 @@ a:active i::before {
     .columns-12-6-3 {
         max-width: calc(100% - 30px);
     }
-    /* * {
-        font-size: 95%;
-    } */
+
     .logo-image {
         max-width: 320px;
     }
-    /* .dark-font {
-        font-size: 70%;
-    } */
-    
-    h2{
+
+    h2 {
         font-size: 30px;
     }
-    h3{
+
+    h3 {
         font-size: 25px;
     }
-    h4{
+
+    h4 {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 18px;
     }
 }
@@ -368,20 +367,24 @@ a:active i::before {
     .columns-12-6-3 {
         max-width: calc(50% - 30px);
     }
+
     .logo-image {
         max-width: 420px;
     }
 
-    h2{
+    h2 {
         font-size: 30px;
     }
-    h3{
+
+    h3 {
         font-size: 25px;
     }
-    h4{
+
+    h4 {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 18px;
     }
 }
@@ -390,19 +393,24 @@ a:active i::before {
     .columns-12-6-3 {
         max-width: calc(33.333% - 30px);
     }
+
     .logo-image {
         max-width: 720px;
     }
-    h2{
+
+    h2 {
         font-size: 40px;
     }
-    h3{
+
+    h3 {
         font-size: 35px;
     }
-    h4{
+
+    h4 {
         font-size: 30px;
     }
-    p{
+
+    p {
         font-size: 20px;
     }
 
