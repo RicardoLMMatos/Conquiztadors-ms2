@@ -205,7 +205,7 @@ The finished product came very close to the initial concept.
 ---
 
 ## Testing
-See [TESTING.md]
+See [TESTING.md](/documentation/testing.md)
 
 ---
 
