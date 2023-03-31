@@ -126,3 +126,41 @@ I have also tested the website on real mobile devices such as Samsung Galaxy S21
 
 
 
+## Debugging
+
+* Variables - stored key elements and data inside variables 
+- This is so that I could console.log these to inspect the data and debug
+
+* Functions - key pieces of functionality were added to functions
+- This keeps the code maintainable
+- This allows for testing
+
+- Case - Click next function
+- This has an index passed to it that grabs the next question 
+- console.log was used so that I could check if the correct question was being loaded
+- this also helped fix a click bug 
+- the next question code was being activated when clicking outside a button
+- this was happening because the event listener is attached to the parent element and the next question was being called when clicking on the UL
+- console.log was used to output the event target
+- you could then work out that the ul click was calling the next question function 
+- the fix was to put the next question function inside the  if (event.target && event.target.nodeName == "BUTTON") if statement
+- this means the user must click a button (answer) for the next question function to be called (this loads the next question)
+
+
+
+- Case - there was an issue where the answers were not being injected into the DOM
+- I used a console.log inside the for loop that is responsible for injecting the list items
+- After this nothing was being logged to the console, the issue was the for loop
+- After reviewing the for loop, the .length was missing from the currentAnswers.length part of the for loop
+- After adding .length to currentAnswers the data was being logged to the console and the answers were being injected to the DOM
+
+
+- Case - Fetch function for the Trivia API
+- the question or answers were not being inected in the DOM when the injectQuestion function was being called 
+- console.log was used inside the injectQuestion function - responsible for injecting the questions and answers into the DOM - and this was logging a promise to the console
+- So, the global variable questionsSet was not being updated with the correct data from inside the .then function
+- After doing a bit of research, I found that this https://stackoverflow.com/questions/39021870/fetch-returns-promise-instead-of-actual-data-even-after-using-then
+- "The way promises works mean you'll need to handle the responseJSON inside the handler for then(). Due to the asynchronous nature of requests the outer code will already have returned by the time the promise resolves."
+- So, to fix this I had to move the injectQuestion function inside the .then function, the inject question function then injected the question and answers into the DOM
+
+

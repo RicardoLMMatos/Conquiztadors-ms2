@@ -33,10 +33,10 @@ You can check the website here [ConQuiztadors](https://ricardolmmatos.github.io/
 ## About
 
 ConQuiztadors is a quiz game for my Code Institute Full-stack developer ms2 project.
-The idea of making a quiz game to this project was bacause I wanted to created something very interactive and that I personaly like which is quiz games.
+The idea of making a quiz game to this project was because I wanted to create something very interactive and that I personaly like which is quiz games.
 
-I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions for which I have used an API to fetch. [The trivia API](https://the-trivia-api.com/).
-On each answer the user will get a red or green light when clicking the chosen answer (red for wrong and green for right answer) and a message with the words "right" or "wrong" will also apear.
+I have tried to make this game very interactive, the users will have the chance to choose between six subjects, each subject has ten randomised  questions for which I have used an API and JavaScript Fetch. [The trivia API](https://the-trivia-api.com/).
+On each answer the user will get a red or green highlight when clicking the chosen answer (red for wrong and green for right answer) and a message with the words "right" or "wrong" will also appear for accessibility.
 At the end of each round the user will get the score and a personalised message for three types of score; less than five, between six and nine or ten out of ten correct answers.
 
 ---
@@ -46,7 +46,7 @@ At the end of each round the user will get the score and a personalised message 
 
  ### Website owner Goals: 
 
-  * I want new new and existing users to play my quiz game.
+  * I want new and existing users to play my quiz game.
   * I want players to find how the game works easily.
   * I want the quiz game to be both fun and educational.
   * I want my webpage to work as it should at all times.
@@ -54,7 +54,7 @@ At the end of each round the user will get the score and a personalised message 
 
 ### First Time Visitor Goals:
  
-  * I want to easily find how the game works.
+  * I want to easily find out how the game works.
   * I want to be able to start a game quickly without having to go through lots of steps.
   * I want to be able to pick a subject of my liking.
   * I want to quickly return to the subjects page at any time if I wish.
@@ -64,8 +64,8 @@ At the end of each round the user will get the score and a personalised message 
 ### Returning and frequent Visitor Goals:
 
    * I want to be able to start a game quickly without having to go through lots of steps.
-   * I want to have diferent subjects to choose from.
-   * I want the game experience to be consistant every time I play the game. 
+   * I want to have different subjects to choose from.
+   * I want the game experience to be consistent every time I play the game. 
    * I want to get random questions on all subjects.
    * I want to quickly find the links to social media pages.
 
@@ -232,7 +232,7 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 1. Go to the [Conquiztadors repo](https://github.com/RicardoLMMatos/Conquiztadors-ms2)
 2. Click on the green *Code* button and *Download ZIP*
 3. Extract the ZIP file on your local machine
-4. Run the *index.html* file in a browser
+4. Open the *index.html* file in a browser
 
 #### To clone the repo:
 1. Go to the [Conquiztadors repo](https://github.com/RicardoLMMatos/Conquiztadors-ms2)

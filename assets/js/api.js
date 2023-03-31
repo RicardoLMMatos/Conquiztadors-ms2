@@ -2,59 +2,11 @@
     const categoriesDiv = document.getElementById('categories');
     const science = document.getElementById('science');
     let html;
-    function fallback(){
-        html = 
-        `<div class="column columns-12-6-3">
-        <a href="questions-page1.html?quiz=science&trivia_api=false" class="card">
-            <h4>Science</h4>
-        </a>
-    </div>
-    <div class="column columns-12-6-3">
-
-        <a href="questions-page1.html?quiz=history&trivia_api=false" class="card">
-            <h4>History</h4>
-        </a>
-
-    </div>
-    <div class="column columns-12-6-3">
-
-        <a href="questions-page1.html?quiz=geography&trivia_api=false" class="card">
-            <h4>Geography</h4>
-        </a>
-
-    </div>
-    <div class="column columns-12-6-3">
-
-        <a href="questions-page1.html?quiz=maths&trivia_api=false" class="card">
-            <h4>Maths</h4>
-        </a>
-
-    </div>
-    <div class="column columns-12-6-3">
-
-        <a href="questions-page1.html?quiz=movies&trivia_api=false" class="card">
-            <h4>Movies</h4>
-        </a>
-
-    </div>
-    <div class="column columns-12-6-3">
-
-        <a href="questions-page1.html?quiz=gaming&trivia_api=false" class="card">
-            <h4>Gaming</h4>
-        </a>
-
-    </div>`;
-    categoriesDiv.innerHTML = html;
-    }
+   
     function displayCategories(json){
-      // console.log(json);
+     
       const { ["Science"]: science, ["History"]: history, ["Geography"]: geography, ["General Knowledge"]: gK, ["Film & TV"]: tV, ["Music"]: music } = json;
-      // console.log(science[0]);
-      // console.log(history[0]);
-      // console.log(geography[0]);
-      // console.log(gK[0]);
-      // console.log(tV[2]);
-      // console.log(music[0]);
+
       html = 
       `<div class="column columns-12-6-3">
       <a href="questions-page1.html?quiz=${science[0]}&trivia_api=true" class="card">
@@ -113,7 +65,8 @@
       
       })
       .catch(error => {
-        fallback();
+      
+        alert('there was an error fetching the trivia api categories, please try refreshing your browser or trying again later.');
       });
 
   
