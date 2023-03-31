@@ -79,15 +79,42 @@ Theres also no errors showing on the browswer console.
 
 ## Broswer Compatibility
 
-    I have teste the site on four diferent broswers, Google chrome, Firefox developer edition, opera and Microsoft Edge.
+I have teste the site on four diferent broswers, Google chrome, Firefox developer edition, opera and Microsoft Edge.
+The site is consistant on all browswers with no visual or performance changes.
 
-    | Browser | Screenshot | Notes |
-    | --- | --- | --- |
-    | Chrome  | [Screenshot](/documentation/documentation%20images/chrome-screen.png) | Works as expected      |
-    | Firefox | [screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
-    | Edge    | [screenshot](/documentation/documentation%20images/edge-screen.png) | Works as expected)   |
-    | Opera   | [screenshot](/documentation/documentation%20images/opera-screen.png) | Works as expected   |
 
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome  | [screenshot](/documentation/documentation%20images/chrome-screen.png) | Works as expected      |
+| Firefox | [screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
+| Edge    | [screenshot](/documentation/documentation%20images/edge-screen.png) | Works as expected   |
+| Opera   | [screenshot](/documentation/documentation%20images/opera-screen.png) | Works as expected   |
+
+
+---
+
+
+### Device Compatability and Responsiveness Testing
+
+The website was tested using Google Chrome Developer Tools and reall devices.
+
+#### Tested devices:
+* iPhone SE
+* iPhone XR
+* iPhone 12 Pro
+* Pixel 5
+* Samsung Galaxy S8+
+* Samsung Galaxy S20 Ultra
+* iPad Air
+* iPad Mini
+* Surface Pro 7
+* Surface Duo
+* Galaxy Fold
+* Samsung Galaxy A51
+* Nest Hub
+* Nest Hub Max
+
+I have also tested the website on real mobile devices such as Samsung Galaxy S21, S10, Google Pixel, Huawei P30, Iphone 11 and everything renders as intended and it is 100% responsive.
 
 
     
