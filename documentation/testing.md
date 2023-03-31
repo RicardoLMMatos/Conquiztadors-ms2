@@ -75,6 +75,21 @@ Theres also no errors showing on the browswer console.
     Score message is shown according to score | ok
     Quit button kinks to home page| ok
 
+    ---
+
+    ## Broswer Compatibility
+
+    I have teste the site on four diferent broswers, Google chrome, Firefox developer edition, opera and Microsoft Edge.
+
+    | Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](/documentation/documentation%20images/chrome-screen.png) | Works as expected |
+| Firefox | ![screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
+| Edge | ![screenshot](/documentation/documentation%20images/edge-screen.png) | Works as expected |
+| Opera | ![screenshot](/documentation/documentation%20images/opera-screen.png) | Works as expected |
+
+
+
     
 
 
