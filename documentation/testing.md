@@ -83,11 +83,10 @@ Theres also no errors showing on the browswer console.
 
     | Browser | Screenshot | Notes |
     | --- | --- | --- |
-    [![](/documentation/documentation%20images/chrome-screen.png)]
-    | Chrome | ![Chrome](/documentation/documentation%20images/chrome-screen.png) | Works as expected |
-    | Firefox | ![screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
-    | Edge | ![screenshot](/documentation/documentation%20images/edge-screen.png | Works as expected) |
-    | Opera | ![screenshot](/documentation/documentation%20images/opera-screen.png | Works as expected) |
+    | Chrome  | [Screenshot](/documentation/documentation%20images/chrome-screen.png) | Works as expected      |
+    | Firefox | [screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
+    | Edge    | [screenshot](/documentation/documentation%20images/edge-screen.png) | Works as expected)   |
+    | Opera   | [screenshot](/documentation/documentation%20images/opera-screen.png) | Works as expected   |
 
 
 
