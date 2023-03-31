@@ -66,8 +66,8 @@ Theres also no errors showing on the browswer console.
     Answers buttons submit answers | ok
     hover effect on all links | ok
     Goes to score page after ten questions | ok
-
-     * ### Score page 
+ 
+ * ### Score page 
     Test | Result
     ---|:---:
     Page responsiveness | ok
@@ -77,16 +77,17 @@ Theres also no errors showing on the browswer console.
 
     ---
 
-    ## Broswer Compatibility
+## Broswer Compatibility
 
     I have teste the site on four diferent broswers, Google chrome, Firefox developer edition, opera and Microsoft Edge.
 
-| Browser | Screenshot | Notes |
-| --- | --- | --- |
-| Chrome | ![screenshot]: /documentation/documentation%20images/chrome-screen.png | Works as expected |
-| Firefox | ![screenshot]: /documentation/documentation%20images/firefox-screen.png | Works as expected |
-| Edge | ![screenshot]: /documentation/documentation%20images/edge-screen.png | Works as expected |
-| Opera | ![screenshot]: /documentation/documentation%20images/opera-screen.png | Works as expected |
+    | Browser | Screenshot | Notes |
+    | --- | --- | --- |
+    [![](/documentation/documentation%20images/chrome-screen.png)]
+    | Chrome | ![Chrome](/documentation/documentation%20images/chrome-screen.png) | Works as expected |
+    | Firefox | ![screenshot](/documentation/documentation%20images/firefox-screen.png) | Works as expected |
+    | Edge | ![screenshot](/documentation/documentation%20images/edge-screen.png | Works as expected) |
+    | Opera | ![screenshot](/documentation/documentation%20images/opera-screen.png | Works as expected) |
 
 
 
