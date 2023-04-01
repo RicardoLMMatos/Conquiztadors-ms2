@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.removeEventListener("click", clickNext);
       const element = event.target;
       const isCorrect = element.getAttribute("data-correct");
-      console.log(isCorrect);
+     
       //If vthe data attribute is true, then add the is-active class(right answer)
       if (isCorrect == "true") {
         element.className = "question-button is-active";

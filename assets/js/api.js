@@ -2,7 +2,8 @@
     const categoriesDiv = document.getElementById('categories');
     const science = document.getElementById('science');
     let html;
-   
+    
+    
     function displayCategories(json){
      
       const { ["Science"]: science, ["History"]: history, ["Geography"]: geography, ["General Knowledge"]: gK, ["Film & TV"]: tV, ["Music"]: music } = json;
@@ -50,7 +51,7 @@
   </div>`;
   categoriesDiv.innerHTML = html;
     }
-    // fetch request from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    // This fetch request was popied from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     /*
       To extract the JSON body content from the Response object, 
       we use the json() method, 
