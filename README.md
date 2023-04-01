@@ -258,7 +258,7 @@ The Live link is [QonQuiztadors](https://ricardolmmatos.github.io/Conquiztadors-
 * [Videvo](https://www.videvo.net) - Background
 
 ## Code
- All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and some more I just clicked by.
+ All my code was written by me based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and multiple online sources such as [W3schools](https://www.w3schools.com/), [the Net Ninja](https://www.youtube.com/c/TheNetNinja?app=desktop) and [Stackoverflow](https://stackoverflow.com).
 
 
 [Back to top](#Conquiztadors-ms2)

@@ -198,6 +198,8 @@ After doing a bit of research, I found that this https://stackoverflow.com/quest
 "The way promises works mean you'll need to handle the responseJSON inside the handler for then(). Due to the asynchronous nature of requests the outer code will already have returned by the time the promise resolves."
 So, to fix this I had to move the injectQuestion function inside the .then function, the inject question function then injected the question and answers into the DOM
 
+#### All bugs found were fixed, If there are any still they are not of my knowledge.
+
 ---
 
 [Back to top](#Testing)

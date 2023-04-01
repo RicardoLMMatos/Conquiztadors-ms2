@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // The score
   let score = 0;
 
-  //Get the value of the "quiz" in eg "https://example.com/?quiz=science"
+  //Get the value of the "quiz" in  "https://example.com/?quiz=science"
   let quiz = false; //"quiz"
 
   // The trivia api variable
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     injectQuestion(0, questionsSet);
   }
 
-
+   // The api used is free to use and it is from https://the-trivia-api.com/
   //  The fetch function that fetches the trivia api quiz data
   fetch(`https://the-trivia-api.com/api/questions?limit=10&categories=${quiz}&difficulty=easy`)
     .then(res => {
