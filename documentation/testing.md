@@ -198,11 +198,10 @@ After doing a bit of research, I found that this https://stackoverflow.com/quest
 "The way promises works mean you'll need to handle the responseJSON inside the handler for then(). Due to the asynchronous nature of requests the outer code will already have returned by the time the promise resolves."
 So, to fix this I had to move the injectQuestion function inside the .then function, the inject question function then injected the question and answers into the DOM
 
-## Unfixed bugs
+* Bug found - (just before submition) In the subject message at the top of the questions page text was all lower case and with symbols, I believe the issue is cause by the subjects html element getting it's innerHTML from the api.
+To fix it I have used " subject.innerHTML = capitalizeFirstLetter(quiz.replace(/_/g, " "))" use Capitals, remove "_" and add a space between words.
 
-* In the general knowledge questions page the subject message at the top of the page text is "general_knowledge" instead of the intended "General knowledge", I believe the issue is cause by the subjects html element getting it's innerHTML from the api and I am not entirely sure how to fix this so far but I will keep working on it.
-
-#### All bugs found were fixed apart from the one mentioned above.
+#### All bugs found before submition were fixed and I'm not aware of any existing bugs.
 
 ---
 
