@@ -45,11 +45,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Store the trivia api value inside the trivia api variable (true)
   trivia_api = params.trivia_api;
+  
+
+  // Capitalize first letter function
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  
+  
 
   //If the quiz is science,add the science questions to the  question set and so on
   //I have used an API from https://the-trivia-api.com/ to generated the questions 
-  if (params && quiz) {
-    subject.innerHTML = quiz;
+  if(params && quiz) {
+    subject.innerHTML = capitalizeFirstLetter(quiz.replace(/_/g, " "))
   }
 
   //Function to shuffle the arrays
@@ -252,3 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   clickEvent();
 });
+
+
+
