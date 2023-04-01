@@ -1,5 +1,6 @@
 # Testing
 
+
 Return back to the [README.md](/README.md) file.
 
 ## Code validation
@@ -13,14 +14,15 @@ To validate my code using online validators I have used the recomended online va
 * [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 * [Javascript validator JSHint](https://jshint.com/) to validate all of my Javascript files.
 
+
 ### HTML
 
 The html code passed the validation with no errors.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html) | ![screenshot](/documentation/documentation%20images/html-validation.png) | Section lacks heading. Consider using h2-h6 elements |
-| Questions | [W3C](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Fquestions-page1.html%3Fquiz%3Dscience%26trivia_api%3Dtrue) | ![screenshot](/documentation/documentation%20images/html-questions-validation.png) | Warnings are about used empty headings, the reason they are empty is that they are used to inject text using Javascript |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html) | [screenshot](/documentation/documentation%20images/html-validation.png) | Section lacks heading. Consider using h2-h6 elements |
+| Questions | [W3C](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Fquestions-page1.html%3Fquiz%3Dscience%26trivia_api%3Dtrue) | [screenshot](/documentation/documentation%20images/html-questions-validation.png) | Warnings are about used empty headings, the reason they are empty is that they are used to inject text using Javascript |
 
 
 ### CSS
@@ -29,7 +31,8 @@ The HTML code passed the validation with no errors.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](/documentation/documentation%20images/css-validayion.png) | No errors found, warnings are due to fontawsome vendor extensions|
+| Home | [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | [screenshot](/documentation/documentation%20images/css-validayion.png) | No errors found, warnings are due to fontawsome vendor extensions|
+
 
 ### Javascript
 
@@ -38,8 +41,8 @@ Theres also no errors showing on the browswer console.
 
 | Page | Screenshot | Notes |
 | --- | --- | --- |
-| Main js file | ![screenshot](/documentation/documentation%20images/js-validation.png) | No errors found|
-| API js file | ![screenshot](/documentation/documentation%20images/api.js-validation.png) | No errors found|
+| Main js file | [screenshot](/documentation/documentation%20images/js-validation.png) | No errors found|
+| API js file | [screenshot](/documentation/documentation%20images/api.js-validation.png) | No errors found|
 
 ---
 
@@ -75,7 +78,7 @@ Theres also no errors showing on the browswer console.
     Score message is shown according to score | ok
     Quit button kinks to home page| ok
 
-    ---
+---
 
 ## Broswer Compatibility
 
@@ -94,11 +97,11 @@ The site is consistant on all browswers with no visual or performance changes.
 ---
 
 
-### Device Compatability and Responsiveness Testing
+## Device Compatability and Responsiveness Testing
 
-The website was tested using Google Chrome Developer Tools and reall devices.
+The website was tested using Google Chrome Developer Tools and real devices to check for responsiveness.
 
-#### Tested devices:
+#### Google chrome tools tested devices:
 * iPhone SE
 * iPhone XR
 * iPhone 12 Pro
@@ -114,20 +117,39 @@ The website was tested using Google Chrome Developer Tools and reall devices.
 * Nest Hub
 * Nest Hub Max
 
-I have also tested the website on real mobile devices such as Samsung Galaxy S21, S10, Google Pixel, Huawei P30, Iphone 11 and everything renders as intended and it is 100% responsive.
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| Mobile (DevTools) | [screenshot](/documentation/documentation%20images/mob-chrometools.png) | Works as expected |
+| Tablet (DevTools) | [screenshot](/documentation/documentation%20images/tab-chrometools.png) | Works as expected |
 
+#### Real devices tested:
 
-    
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| iPhone 14 | [screenshot](/documentation/documentation%20images/iphone-home.jpg) | Works as expected |
+| Samsung s21 | [screenshot](/documentation/documentation%20images/s21-home.jpg)| Works as expected |
+| Samsung s10 plus | [screenshot](/documentation/documentation%20images/s10-home.jpg) | Works as expected |
+| 4K Monitor | [screenshot](/documentation/documentation%20images/full-screen.png) | Works as expected |
 
+---
 
+## Accessibility and Performance
 
+The [Google Chrome LightHouse](https://developer.chrome.com/docs/lighthouse) was used to do check the website performance and accessibility.
+#### Results
 
+ * Afer resizing some images the Lighthouse audit results are pretty good with a bit of performance drop on mobile, I believe this is due to javascript injecting most of the text using .innerHTML.
 
+  |                       **Home page desktop score**                                  |                           **Home page mobile score**                                     |
+  |        :----------------------------------------------------------:                |        :-------------------------------------------------------------------:             |
+  | ![Home page desktop score](/documentation/documentation%20images/lighthouse-home-desk.png)  | ![Home page mobile score](/documentation/documentation%20images/lighthouse-home-mob.png)      |
+  |                      **Questions page score**                                     |                          **Questions page mobile score**                                        |
+  |  ![Questions desktop score](/documentation/documentation%20images/lighthouse-questions-desk.png)| ![Questions mobile score](/documentation/documentation%20images/lighthouse-questions-mob.png)         |
+               
+ ---
 
-
-
-## Debugging
-
+## Debugging and issues
+ 
 * Variables - stored key elements and data inside variables 
 - This is so that I could console.log these to inspect the data and debug
 
