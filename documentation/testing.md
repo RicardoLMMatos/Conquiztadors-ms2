@@ -137,7 +137,7 @@ The website was tested using Google Chrome Developer Tools and real devices to c
 | Mobile (DevTools) | [screenshot](/documentation/documentation%20images/mob-chrometools.png) | Works as expected |
 | Tablet (DevTools) | [screenshot](/documentation/documentation%20images/tab-chrometools.png) | Works as expected |
 
-#### Real devices tested:
+#### Other devices tested:
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
@@ -200,9 +200,9 @@ So, to fix this I had to move the injectQuestion function inside the .then funct
 
 ## Unfixed bugs
 
-* In the general knowledge questions page the subject message at the top of the page text is "general_knowledge" instead of the intended "General knowledge", I believe the issue is cause by the subjects html element getting it's innerHTML from the api and I am not intirely sure how to fix this so far but I will keep working on it.
+* In the general knowledge questions page the subject message at the top of the page text is "general_knowledge" instead of the intended "General knowledge", I believe the issue is cause by the subjects html element getting it's innerHTML from the api and I am not entirely sure how to fix this so far but I will keep working on it.
 
-#### All bugs found were fixed, If there are any still they are not of my knowledge.
+#### All bugs found were fixed apart from the one mentioned above.
 
 ---
 
