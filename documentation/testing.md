@@ -1,6 +1,6 @@
 # Testing
 
-Return back to the [README.md](/README.md) file.
+Return back to [README.md](https://github.com/RicardoLMMatos/Conquiztadors-ms2/blob/main/README.md)
 
 ---
 
