@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let questionsSet = [];
 
   // Holds the questions, answers and the correct answer
-  // This "const params = new Proxy" is something I did not learn in the course but I found it on the internet and I am trying to understand better, but I  it works like this, it gets the value of the quiz in the url and stores it in the variable quiz
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   trivia_api = params.trivia_api;
 
   //If the quiz is science,add the science questions to the  question set and so on
-  //I have used chatgpt to created the questions and answer
+  //I have used an API from https://the-trivia-api.com/ to generated the questions 
   if (params && quiz) {
     subject.innerHTML = quiz;
   }
@@ -102,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-  // This function injects the quiz messages to the DOM
+  // This function injects the score messages to the DOM
   function checkScoreProgress(index, length) {
 
     if (index > length - 1) {

@@ -1,6 +1,6 @@
 
-    const categoriesDiv = document.getElementById('categories');
-    const science = document.getElementById('science');
+    const categoriesDiv = document.getElementById("categories");
+    const science = document.getElementById("science");
     let html;
     
     
@@ -51,6 +51,8 @@
   </div>`;
   categoriesDiv.innerHTML = html;
     }
+
+    
     // This fetch request was popied from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     /*
       To extract the JSON body content from the Response object, 
