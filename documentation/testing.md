@@ -166,31 +166,63 @@ The [Google Chrome LightHouse](https://developer.chrome.com/docs/lighthouse) was
 
  ## User Experience testing
 
+ #### Using the same User Experience expectations as the one on the readme.me file I have checked if the finished product was matching the expectations.
+
  ### Website owner Goals: 
 
   * I want new and existing users to play my quiz game.
-  
+     - The game have been deployed and is available to everybody to play it. 
   * I want players to find how the game works easily.
+     - The rules are on the home page and are easy to understand.
+     - [Rules](/documentation/documentation%20images/user-rules.png)
   * I want the quiz game to be both fun and educational.
+     - There are six diferent subjects to choose from both fun and educational.
+     - [Subjects](/documentation/documentation%20images/user-subjects.png)
   * I want my webpage to work as it should at all times.
+     - Intensive testing has been done to assure that the site works as it should.
   * I want users to enjoy the game and return to play it again. 
+     - The game has been built thinking about diferent types of users, offering enough subjects for everyone's liking with easy to medium dificulty questions so it is enjoyable and makes the users return.
 
 ### First Time Visitor Goals:
  
   * I want to easily find out how the game works.
+     - The rules are easy to read and are on the home page, the subjects are on the home page and are easy to identify, the game starts as soon as the user picks the subjects.
+     - [Home screen](/documentation/documentation%20images/desk-home.png)
   * I want to be able to start a game quickly without having to go through lots of steps.
+     - Same as above.
+     - [Home screen](/documentation/documentation%20images/desk-home.png)
   * I want to be able to pick a subject of my liking.
+     - The game offers six diferent subjects.
+     - [Subjects](/documentation/documentation%20images/user-subjects.png)
   * I want to quickly return to the subjects page at any time if I wish.
+     - There is a quit button at the bottom of the questions page that takes the user back to the home screen.
+    - [Questions page](/documentation/documentation%20images/desktop-questions.png)
   * I want to get my score at the end and get a message that relates to it.
+    - I have created three diferent messages for three diferent types of score making it more personal and fun to the user.
+    - [Lower score](/documentation/documentation%20images/score.png) 
+    - [Medium score](/documentation/documentation%20images/med-score.png)
+    - [Max score](/documentation/documentation%20images/max-score.png)
   * I want to quickly find the links to social media pages.
+    - The links for social media are at the bottom of the home page and they are very easy to find due to their bright colours.
+    - [Home screen](/documentation/documentation%20images/desk-home.png)
 
 ### Returning and frequent Visitor Goals:
 
    * I want to be able to start a game quickly without having to go through lots of steps.
+     - The rules are easy to read and are on the home page, the subjects are on the home page and are easy to identify, the game starts as soon as the user picks the subjects.
+     - [Home screen](/documentation/documentation%20images/desk-home.png)
    * I want to have different subjects to choose from.
-   * I want the game experience to be consistent every time I play the game. 
+     - There are six diferent subjects to choose from both fun and educational.
+     - [Subjects](/documentation/documentation%20images/user-subjects.png)
+   * I want the game experience to be consistent every time I play the game.
+     - Intensive testing has been done to assure that the site works as it should.
    * I want to get random questions on all subjects.
+     - I have created a function to shuffle the questions from the api so that the user gets randomised questions at all times.
+     - [Array shuffle](/documentation/documentation%20images/array-shuffle.png)
    * I want to quickly find the links to social media pages.
+     - The links for social media are at the bottom of the home page and they are very easy to find due to their bright colours.
+     - [Home screen](/documentation/documentation%20images/desk-home.png)
+
 
    ---
 
