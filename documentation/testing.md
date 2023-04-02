@@ -266,10 +266,13 @@ So, to fix this I had to move the injectQuestion function inside the .then funct
 * Bug found - (just before submition) In the subject message at the top of the questions page text was all lower case and with symbols, I believe the issue is cause by the subjects html element getting it's innerHTML from the api.
 To fix it I have used " subject.innerHTML = capitalizeFirstLetter(quiz.replace(/_/g, " "))" use Capitals, remove "_" and add a space between words.
 
-#### Unfixed bugs
+### Unfixed bugs
 
 * When validating questions page HTML with W3C Warnings are about used empty headings, the reason they are empty is that they are used to inject text using Javascript.
 [screenshot](/documentation/documentation%20images/questions-validator-warnings.png)
+
+* When validating the api.js file JSHnt says that I have one unused variable, the questionsSetAPI but this variable is used to fetch the api subjects.
+[screenshot](/documentation/documentation%20images/api.js-validation.png)
 
 ---
 

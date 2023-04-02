@@ -1,13 +1,13 @@
 
     const categoriesDiv = document.getElementById("categories");
-    const science = document.getElementById("science");
+
     let html;
     
     
     function displayCategories(json){
-     
+      // The subjects, had to change the text due to spaces
       const { ["Science"]: science, ["History"]: history, ["Geography"]: geography, ["General Knowledge"]: gK, ["Film & TV"]: tV, ["Music"]: music } = json;
-
+      // The html to inject
       html = 
       `<div class="column columns-12-6-3">
       <a href="questions-page1.html?quiz=${science[0]}&trivia_api=true" class="card">
