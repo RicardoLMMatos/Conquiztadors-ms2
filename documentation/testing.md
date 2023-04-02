@@ -172,7 +172,8 @@ The [Google Chrome LightHouse](https://developer.chrome.com/docs/lighthouse) was
  ### Website owner Goals: 
 
   * I want new and existing users to play my quiz game.
-     - The game have been deployed and is available to everybody to play it. 
+     - The game has been deployed and is available to everybody to play it. 
+     - [live page](https://ricardolmmatos.github.io/Conquiztadors-ms2/)
   * I want players to find how the game works easily.
      - The rules are on the home page and are easy to understand.
      - [Rules](/documentation/documentation%20images/user-rules.png)
