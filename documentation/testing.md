@@ -37,7 +37,7 @@ The html code passed the validation with no errors.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html) | [screenshot](/documentation/documentation%20images/html-validation.png) | Section lacks heading. Consider using h2-h6 elements |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Findex.html) | [screenshot](/documentation/documentation%20images/html-validation.png) | No errors or warnings |
 | Questions | [W3C](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fricardolmmatos.github.io%2FConquiztadors-ms2%2Fquestions-page1.html%3Fquiz%3Dscience%26trivia_api%3Dtrue) | [screenshot](/documentation/documentation%20images/html-questions-validation.png) | Warnings are about used empty headings, the reason they are empty is that they are used to inject text using Javascript |
 
 
@@ -202,7 +202,10 @@ So, to fix this I had to move the injectQuestion function inside the .then funct
 * Bug found - (just before submition) In the subject message at the top of the questions page text was all lower case and with symbols, I believe the issue is cause by the subjects html element getting it's innerHTML from the api.
 To fix it I have used " subject.innerHTML = capitalizeFirstLetter(quiz.replace(/_/g, " "))" use Capitals, remove "_" and add a space between words.
 
-#### All bugs found before submition were fixed and I'm not aware of any existing bugs.
+#### Unfixed bugs
+
+* When validating questions page HTML with W3C Warnings are about used empty headings, the reason they are empty is that they are used to inject text using Javascript.
+[screenshot](/documentation/documentation%20images/questions-validator-warnings.png)
 
 ---
 
