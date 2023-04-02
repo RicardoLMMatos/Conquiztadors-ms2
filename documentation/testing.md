@@ -4,13 +4,6 @@ Return back to [README.md](https://github.com/RicardoLMMatos/Conquiztadors-ms2/b
 
 ---
 
-## About my testing file
-
-I have chosen to take manual testing for this project and I am aware of both BDD and TDD testing methods, the reason I chose BDD or Behaviour driven development is that I wanted to focus on learning as much of the Javascrpit language as I could in the given time.
-I have extensively manualy tested my software and in the future I intend to use TDD with BDD.
-
----
-
 ### Table of Contents
 
 * [Code validation](#Code-validation)
@@ -22,6 +15,7 @@ I have extensively manualy tested my software and in the future I intend to use 
 * [Device Compatability and Responsiveness Testing](#device-compatability-and-responsiveness-testing)
 * [Accessibility and Performance](#accessibility-and-performance)
 * [Debugging and issues](#Debugging-and-issues)
+* [About my testing](#About-my-testing-file)
 
 ---
 
@@ -211,6 +205,11 @@ To fix it I have used " subject.innerHTML = capitalizeFirstLetter(quiz.replace(/
 #### All bugs found before submition were fixed and I'm not aware of any existing bugs.
 
 ---
+
+## About my testing file
+
+I have chosen to take manual testing for this project and I am aware of both BDD and TDD testing methods, the reason I chose BDD or Behaviour driven development is that I wanted to focus on learning as much of the Javascrpit language as I could in the given time.
+I have extensively manualy tested my software and in the future I intend to use TDD with BDD.
 
 [Back to top](#Testing)
 
