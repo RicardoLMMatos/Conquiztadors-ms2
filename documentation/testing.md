@@ -164,6 +164,36 @@ The [Google Chrome LightHouse](https://developer.chrome.com/docs/lighthouse) was
                
  ---
 
+ ## User Experience testing
+
+ ### Website owner Goals: 
+
+  * I want new and existing users to play my quiz game.
+  
+  * I want players to find how the game works easily.
+  * I want the quiz game to be both fun and educational.
+  * I want my webpage to work as it should at all times.
+  * I want users to enjoy the game and return to play it again. 
+
+### First Time Visitor Goals:
+ 
+  * I want to easily find out how the game works.
+  * I want to be able to start a game quickly without having to go through lots of steps.
+  * I want to be able to pick a subject of my liking.
+  * I want to quickly return to the subjects page at any time if I wish.
+  * I want to get my score at the end and get a message that relates to it.
+  * I want to quickly find the links to social media pages.
+
+### Returning and frequent Visitor Goals:
+
+   * I want to be able to start a game quickly without having to go through lots of steps.
+   * I want to have different subjects to choose from.
+   * I want the game experience to be consistent every time I play the game. 
+   * I want to get random questions on all subjects.
+   * I want to quickly find the links to social media pages.
+
+   ---
+
 ## Debugging and issues
  
 * Variables - stored key elements and data inside variables 
